@@ -31,10 +31,18 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
 }
-
 /*-------------------------------------*/
 /*Body*/
 /*-------------------------------------*/
+
+h1 {
+	text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+	padding-bottom: 50px;
+}
+
 
 .flex-container {
 	overflow: hidden;
@@ -44,12 +52,15 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center; 
-	color: #Df7861;
+	color: #ffa41b;
 	font-size: 17px;
 }
 
 
-
+.top
+{
+	padding-bottom: 10px;
+}
 
 .flex-container > form > .top > label
 {
@@ -70,3 +81,36 @@ display: inline-block;
 	  text-decoration: none;
 
 }
+
+
+
+.flex-container > form > .bottom >  button
+{
+ height: 55px;
+    width: 450px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-size: 25px;
+    font-family: 'Courgette';
+    color: #fff;
+    font-weight: 800;
+}
+
+.flex-container > form > .bottom >  button:hover {
+    border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+	  cursor: pointer;
+}
+
+
+.flex-container > form > div >  p 
+{
+text-align: center;
+padding-bottom: 10px;
+}
+
+
