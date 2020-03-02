@@ -1,0 +1,118 @@
+/*
+-------------------------------
+FONTS :
+
+font-family: 'Francois One' ;
+font-family: 'Courgette' ;
+-------------------------------
+COLORS :
+
+#fff; (alb)
+#ffa41b , #df7861 (portocaliu 1, portocaliu 2)
+#333 (gri inchis)
+-------------------------------
+*/
+
+/*-------------------------------------*/
+/*General stuff*/
+/*-------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Francois One';
+    background-color: #333;
+    background-image: url(back.jpg);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+}
+
+h4 {
+    font-weight: 300;
+    color: #fff;
+}
+
+p {
+    font-family: 'Courgette';
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.orange {
+    color: #ffa41b;
+}
+
+/*-------------------------------------*/
+/*Navbar*/
+/*-------------------------------------*/
+
+nav {
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    height: 65px;
+}
+
+.logo-size {
+    height: 70px;
+    width: 100px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*-------------------------------------*/
+/*Section*/
+/*-------------------------------------*/
+
+section {
+    text-align: center;
+}
+
+/*-------------------------------------*/
+/*Form stuff*/
+/*-------------------------------------*/
+
+.inp {
+    height: 50px;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-family: 'Francois One';
+}
+
+.pad {
+    padding-left: 550px;
+    padding-right: 550px;
+}
+
+.btn {
+    height: 55px;
+    width: 450px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-size: 25px;
+    font-family: 'Courgette';
+    color: #fff;
+    font-weight: 800;
+}
+
+.btn:hover {
+    border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+}
