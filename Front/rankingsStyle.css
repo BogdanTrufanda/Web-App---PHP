@@ -1,0 +1,59 @@
+/*-------------------------------------*/
+/*General*/
+/*-------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Francois One';
+	background-color: #333;
+	background-image: url(back.jpg);
+}
+
+
+/*-------------------------------------*/
+/*Navbar*/
+/*-------------------------------------*/
+
+nav {
+
+	background-color: #333;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+}
+
+/*-------------------------------------*/
+/*Body*/
+/*-------------------------------------*/
+
+.flex-container {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.flex-container div:not(:last-child)
+{
+	border-right: 1px #ccc solid;
+	padding-right: 20px;
+}
+
+.flex-container > div > ol > li
+{
+	color:#ccc;
+	margin-bottom: 20px;
+}
+
+.flex-container > div > h4
+{	
+	padding-left: 20px;
+	font-size: 30px;
+	text-align: center;
+	color:#Df7861;
+}
