@@ -334,8 +334,14 @@ select option{
 }
 	
 	/*4K*/
-@media only screen and (min-width: 2000px) and (min-height: 2000px)
+@media only screen and (min-width: 1999px) and (min-height: 2000px)
 {
+    
+       ::-webkit-input-placeholder {
+    font-size: 40pt; 
+}
+    
+    
     nav {
     height: 200px;
 }
@@ -366,6 +372,7 @@ select option{
     }
     .inp1 
     {
+                  font-size: 30pt;
            height: 100px;
      width: 1550px;   
     }
@@ -386,11 +393,9 @@ select option{
 {
     
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    font-size: 30pt; 
+    font-size: 50pt; 
 }
-::-moz-placeholder { /* Firefox 19+ */
-    font-size: 30pt; 
-}
+
     nav {
     height: 250px;
 }
@@ -416,12 +421,12 @@ select option{
     
  .inp 
     {
-              height: 130px;
+              height: 140px;
      width: 1700px;
     }
     .inp1 
     {
-          font-size: 30pt; 
+          font-size: 40pt; 
               height: 150px;
      width: 1750px;  
     }
@@ -432,7 +437,7 @@ select option{
      width: 1750px;
     }
     h4 {
-    font-size: 70px;
+    font-size: 90px;
 }
     
     
