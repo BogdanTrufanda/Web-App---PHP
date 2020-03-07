@@ -4,6 +4,8 @@ body {
     font-family: 'Francois One';
     background-color: #333;
     background-image: url(back.jpg);
+       background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
