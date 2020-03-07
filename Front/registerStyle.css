@@ -2,10 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Francois One';
-    background-color: #333;
-    background-image: url(back.jpg);
-       background-size: cover;
-    background-repeat: no-repeat;
+    background-color: green;
+ background: url(back.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
@@ -17,6 +19,7 @@ h1 {
 h4 {
     font-weight: 300;
     color: #fff;
+    font-size: 20px;
 }
 
 p {
@@ -28,6 +31,11 @@ p {
 
 .orange {
     color: #ffa41b;
+}
+
+.ceva
+{
+    width: 14440px;
 }
 
 /*-------------------------------------*/
@@ -76,8 +84,9 @@ section {
 }
 
 .pad {
-    padding-left: 550px;
-    padding-right: 550px;
+            padding-left: 115px;
+        padding-right: 115px;
+text-align: center;
 }
 
 .inp1 {
@@ -117,3 +126,314 @@ select option{
     border-image-slice: 1;
     border-width: 4px;
 }
+
+
+
+/*---------MEDIA--------------*/
+
+
+/*MOBILE*/
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+    nav {
+    height: 50px;
+}
+ .logo-size {
+    height: 40px;
+    width: 70px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+ h1 {
+    font-size: 40px;
+     padding-left: 20px;
+}
+
+  
+.pad {
+        font-size: 20px;
+            padding-left: 50px;
+        padding-right: 50px;
+
+}  
+    
+ .inp 
+    {
+           height: 30px;
+     width: 260px; 
+/*
+            padding-right: 555px;
+         padding-left: 5px;
+*/
+    }
+    .inp1 
+    {
+           height: 40px;
+    width: 310px; 
+    }
+    .btn
+    {
+                    height: 40px;
+    width: 310px; 
+    }
+    
+    
+    
+
+}
+	
+	
+
+
+/*Tables/Ipads*/
+@media only screen and (min-width: 766px) and (max-width: 1367px) {
+    nav {
+    height: 100px;
+}
+ .logo-size {
+    height: 60px;
+    width: 90px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+ h1 {
+    font-size: 60px;
+     padding-left: 20px;
+}
+
+  
+.pad {
+        font-size: 30px;
+            padding-left: 50px;
+        padding-right: 50px;
+
+}  
+    
+ .inp 
+    {
+           height: 50px;
+     width: 500px; 
+
+    }
+    .inp1 
+    {
+           height: 62px;
+     width: 550px;  
+    }
+    .btn
+    {
+           height: 62px;
+     width: 550px; 
+    }
+    h4 {
+    font-size: 35px;
+}
+    
+    
+
+}
+
+/*FULL HD land*/
+@media only screen and (min-width: 1700px)
+{
+    nav {
+    height: 120px;
+}
+ .logo-size {
+    height: 70px;
+    width: 100px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+ h1 {
+    font-size: 80px;
+     padding-left: 20px;
+}
+
+  
+.pad {
+        font-size: 40px;
+            padding-left: 50px;
+        padding-right: 50px;
+
+}  
+    
+ .inp 
+    {
+           height: 55px;
+     width: 550px; 
+
+    }
+    .inp1 
+    {
+           height: 75px;
+     width: 600px;  
+    }
+    .btn
+    {
+           height: 75px;
+     width: 600px;  
+    }
+    h4 {
+    font-size: 40px;
+}
+    
+    
+
+}
+/*FULL HD 2*/
+@media only screen and (min-width: 1000px) and (min-height: 1300px)
+{
+    nav {
+    height: 150px;
+}
+ .logo-size {
+    height: 80px;
+    width: 110px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+ h1 {
+    font-size: 100px;
+     padding-left: 20px;
+}
+
+  
+.pad {
+        font-size: 50px;
+            padding-left: 50px;
+        padding-right: 50px;
+
+}  
+    
+ .inp 
+    {
+           height: 100px;
+     width: 800px; 
+
+    }
+    .inp1 
+    {
+           height: 110px;
+     width: 845px;  
+    }
+    .btn
+    {
+           height: 110px;
+     width: 845px;  
+    }
+    h4 {
+    font-size: 50px;
+}
+    
+    
+
+}
+	
+	/*4K*/
+@media only screen and (min-width: 2000px) and (min-height: 2000px)
+{
+    nav {
+    height: 200px;
+}
+ .logo-size {
+    height: 100px;
+    width: 150px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 45px;
+}
+ h1 {
+    font-size: 180px;
+     padding-left: 20px;
+}
+
+  
+.pad {
+        font-size: 70px;
+            padding-left: 50px;
+        padding-right: 50px;
+
+}  
+    
+ .inp 
+    {
+           height: 100px;
+     width: 1500px; 
+    }
+    .inp1 
+    {
+           height: 100px;
+     width: 1550px;   
+    }
+    .btn
+    {
+        font-size: 60px;
+              height: 100px;
+     width: 1550px;
+    }
+    h4 {
+    font-size: 70px;
+}
+    
+    
+
+	/*4K reverse*/
+@media only screen and (min-width: 1999px) and (min-height: 2500px)
+{
+    
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 30pt; 
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 30pt; 
+}
+    nav {
+    height: 250px;
+}
+ .logo-size {
+    height: 130px;
+    width: 190px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 55px;
+}
+ h1 {
+    font-size: 200px;
+     padding-left: 20px;
+}
+
+  
+.pad {
+        font-size: 90px;
+            padding-left: 50px;
+        padding-right: 50px;
+
+}  
+    
+ .inp 
+    {
+              height: 130px;
+     width: 1700px;
+    }
+    .inp1 
+    {
+          font-size: 30pt; 
+              height: 150px;
+     width: 1750px;  
+    }
+    .btn
+    {
+        font-size: 80px;
+              height: 150px;
+     width: 1750px;
+    }
+    h4 {
+    font-size: 70px;
+}
+    
+    
+
