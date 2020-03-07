@@ -1,27 +1,43 @@
-/*-------------------------------------*/
-/*General*/
-/*-------------------------------------*/
-
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Francois One';
-	background-color: #333;
-	background-image: url(back.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Francois One';
+    background-color: #333;
+    background-image: url(back.jpg);
 }
 
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+}
+
+h4 {
+    font-weight: 300;
+    color: #fff;
+}
+
+p {
+    font-family: 'Courgette';
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.orange {
+    color: #ffa41b;
+}
 
 /*-------------------------------------*/
 /*Navbar*/
 /*-------------------------------------*/
 
 nav {
-
-	background-color: #333;
-	margin: 0;
-	overflow: hidden;
-	color: #fff;
-    height: 65PX;
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    height: 65px;
 }
 
 .logo-size {
@@ -31,62 +47,57 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 /*-------------------------------------*/
-/*Body*/
+/*Section*/
 /*-------------------------------------*/
 
-h1 {
-	text-align: center;
-    font-weight: 800;
-    font-size: 50px;
-    color: #fff;
-	padding-bottom: 50px;
+section {
+    text-align: center;
 }
 
+/*-------------------------------------*/
+/*Form stuff*/
+/*-------------------------------------*/
 
-.flex-container {
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-	color: #ffa41b;
-	font-size: 17px;
+.inp {
+    height: 40px;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-family: 'Francois One';
 }
 
-
-.top
-{
-	padding-bottom: 10px;
+.pad {
+    padding-left: 550px;
+    padding-right: 550px;
 }
 
-.flex-container > form > .top > label
-{
-display: inline-block;
-	width: 110px;
+.inp1 {
+    height: 50px;
+    width: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-family: 'Francois One';
 }
 
-
-.flex-container > form > .top >  input
-{
-	width: 210px;
-
+select option{
+    display: block;
+    margin: 0 auto;
 }
 
-.flex-container > form > div >  p > a
-{
-	color: white;
-	  text-decoration: none;
-
-}
-
-
-
-.flex-container > form > .bottom >  button
-{
- height: 55px;
+.btn {
+    height: 55px;
     width: 450px;
     background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
     border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
@@ -98,19 +109,9 @@ display: inline-block;
     font-weight: 800;
 }
 
-.flex-container > form > .bottom >  button:hover {
+.btn:hover {
     border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
     background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
     border-image-slice: 1;
     border-width: 4px;
-	  cursor: pointer;
 }
-
-
-.flex-container > form > div >  p 
-{
-text-align: center;
-padding-bottom: 10px;
-}
-
-
