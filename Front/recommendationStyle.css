@@ -1,0 +1,129 @@
+/*-------------------------------------*/
+/*General*/
+/*-------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Francois One';
+    background-color: #333;
+    background-image: url(back.jpg); 
+    
+}
+
+h1 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*-------------------------------------*/
+/*Navbar*/
+/*-------------------------------------*/
+
+nav {
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    height: 65px;
+}
+
+.logo-size {
+    height: 70px;
+    width: 100px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bt {
+    position: absolute;
+    right: 30px;
+    width: 120px;
+    height: 40px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-size: 25px;
+    font-family: 'Courgette';
+    color: #fff;
+    font-weight: 800;
+}
+
+/*-------------------------------------*/
+/*Body*/
+/*-------------------------------------*/
+
+.flex-container {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-container > div > ol > li {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.flex-container > div > h4 {
+    padding-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #Df7861;
+}
+
+.box {
+    width: 200px;
+    height: 350px;
+    background-color: #ffa41b;
+    text-align: center;
+    border: 5px solid #ffa41b;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box:hover {
+    background-color: #de8600;
+    
+}
+
+.inp1 {
+    height: 40px;
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    
+    
+    
+    font-family: 'Francois One';
+}
+
+.btn {
+    height: 55px;
+    width: 150px;
+    
+   
+    font-size: 25px;
+    font-family: 'Courgette';
+    color: #333;
+    font-weight: 800;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
