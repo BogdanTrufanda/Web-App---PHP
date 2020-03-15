@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoMaR</title>
+    <link rel="stylesheet" type="text/css" href="AcademicQuizStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="navbar">
+        <img class="nav-img" alt="poza" src="logo.png">
+        <div class="navbar-right">
+            <a href="Recommendation.html">Recommendation</a>
+            <a href="User.html">User</a>
+            <a href="Login.html">Logout</a>
+        </div>
+    </div>
+    <center>
+        <h1>Quiz Questions</h1>
+    </center>
+    <br>
+        <form class="form-main" name="quiz" style="color: #fff">
+             <div  class="form-section">   
+                <h3 class="form-question"><b>Question 1.
+                <br>How should you ....<br></b></h3>
+                <blockquote>
+                    <div class="form-answer">            
+                        <input class="radio-btn" type="radio" name="q1" value="don't like"><span class="radio-string">don't like</span><br>
+                    </div>    
+                    <div class="form-answer">    
+                        <input class="radio-btn" type="radio" name="q1" value="doesn't like"><span class="radio-string">doesn't like</span><br>
+                    </div>    
+                    <div class="form-answer">    
+                        <input class="radio-btn" type="radio" name="q1" value="doesn't likes"><span class="radio-string">doesn't likes</span><br>
+                    </div>
+                </blockquote>
+            </div> 
+            <div class="form-delimiter"></div>
+            <div  class="form-section">     
+                <h3 class="form-question"><b>Question 2.
+                <br>How should you ....<br></b></h3>
+                <blockquote>
+                    <div class="form-answer">
+                        <input class="radio-btn" type="radio" name="q2" value="don't come"><span class="radio-string">don't come</span><br>
+                    </div>
+                    <div class="form-answer"> 
+                        <input class="radio-btn" type="radio" name="q2" value="doesn't come"><span class="radio-string">doesn't come</span><br>
+                    </div>    
+                    <div class="form-answer">    
+                        <input class="radio-btn" type="radio" name="q2" value="doesn't comes"><span class="radio-string">doesn't comes</span><br>
+                    </div>    
+                </blockquote>
+            </div> 
+            <div class="form-delimiter"></div>
+            <div  class="form-section">
+                <h3 class="form-question"><b>Question 3.
+                <br>How should you ....<br></b></h3>
+                <blockquote>
+                    <div class="form-answer">    
+                        <input class="radio-btn" type="radio" name="q3" value="come"><span class="radio-string">come</span><br>
+                    </div>     
+                    <div class="form-answer">     
+                        <input class="radio-btn" type="radio" name="q3" value="comes"><span class="radio-string">comes</span><br>
+                    </div>
+                    <div class="form-answer"> 
+                        <input class="radio-btn" type="radio" name="q3" value="coming"><span class="radio-string">coming</span><br>
+                    </div>    
+                </blockquote>
+            </div>
+            <div class="form-delimiter"></div>
+            <div  class="form-section">    
+                <h3 class="form-question"><b>Question 4.
+                <br>How should you ....<br></b></h3>
+                <blockquote>
+                    <div class="form-answer"> 
+                        <input class="radio-btn" type="radio" name="q4" value="not"><span class="radio-string">not</span><br>
+                    </div>    
+                    <div class="form-answer">     
+                        <input class="radio-btn" type="radio" name="q4" value="isn't"><span class="radio-string">isn't</span><br>
+                    </div>    
+                    <div class="form-answer">     
+                        <input class="radio-btn" type="radio" name="q4" value="don't"><span class="radio-string">don't</span><br>
+                    </div>    
+                </blockquote>
+            </div>
+            <div class="form-delimiter"></div>
+            <div  class="form-section">    
+                <h3 class="form-question"><b>Question 5.
+                <br>How should you ....<br></b></h3>
+                <blockquote>
+                    <div class="form-answer"> 
+                        <input class="radio-btn" type="radio" name="q5" value="don't make"><span class="radio-string">don't make</span><br>
+                    </div>    
+                    <div class="form-answer">     
+                        <input class="radio-btn" type="radio" name="q5" value="doesn't makes"><span class="radio-string">doesn't makes</span><br>
+                    </div>    
+                    <div class="form-answer">     
+                        <input class="radio-btn" type="radio" name="q5" value="doesn't make"><span class="radio-string">doesn't make</span><br>
+                    </div>    
+                </blockquote>
+            </div>    
+            <div class="form-submission">   
+                <input class="form-btn" id="form-btn-submit" type="button" value="Submit Quiz" onClick="getScore(this.form);">
+                <input class="form-btn" id="form-btn-reset" type="reset" value="Clear">
+            </div>
+            <div class="form-score">
+                <div class="form-result"><span id="form-number">Number of score out of 5 = </span><input class="form-print" type=text size 15 name="mark"></div>
+                <div class="form-result" id="form-percentage" >Score in percentage = <input class="form-print" type=text size=15 name="percentage"></div>
+            </div>
+    </form>
+    <form method="post" name="Form" onsubmit="" action="">
+    </form>
+<script>
+    var numQues = 5;
+    var numChoi = 3;
+    var answers = new Array(15);
+    answers[0] = "doesn't like";
+    answers[1] = "don't come";
+    answers[2] = "come";
+    answers[3] = "don't";
+    answers[4] = "doesn't make";
+    function getScore(form) {
+        var score = 0;
+        var currElt;
+        var currSelection;
+        for (i = 0; i < numQues; i++) {
+            currElt = i * numChoi;
+            answered = false;
+            for (j = 0; j < numChoi; j++) {
+                currSelection = form.elements[currElt + j];
+                if (currSelection.checked) {
+                    answered = true;
+                    if (currSelection.value == answers[i]) {
+                        score++;
+                        break;
+                    }
+                }
+            }
+            if (answered === false) {
+                alert("Do answer all the questions, Please");
+                return false;
+            }
+        }
+        var scoreper = Math.round(score / numQues * 100);
+        form.percentage.value = scoreper + "%";
+        form.mark.value = score;
+    }
+</script>
+</body>
+</html>
