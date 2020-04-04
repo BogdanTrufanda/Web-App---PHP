@@ -28,7 +28,7 @@ COLORS :
 
 body {
     background-color: #333;
-    background-image: url(back.jpg);
+    background-image: url("../Resources/back.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;

@@ -22,7 +22,7 @@ body {
     padding: 0;
     font-family: 'Francois One';
     background-color: #333;
-    background-image: url("back.jpg");
+    background-image: url("../Resources/back.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment: scroll;

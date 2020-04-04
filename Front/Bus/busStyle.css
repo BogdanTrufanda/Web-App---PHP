@@ -22,9 +22,11 @@ body {
     padding: 0;
     font-family: 'Francois One';
     background-color: #333;
-    background-image: url(back.jpg);
-   background-size: cover;
-    background-repeat: no-repeat;
+    background: url("../Resources/back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
@@ -51,24 +53,42 @@ li {
     color: #ffa41b;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*-------------------------------------*/
 /*Navbar*/
 /*-------------------------------------*/
 
-nav {
+.navbar {
     background-color: #333;
-    margin: 0;
-    overflow: hidden;
-    color: #fff;
-    height: 65px;
+    padding: 15px 5px;
 }
 
-.logo-size {
-    height: 70px;
-    width: 100px;
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.navbar img {
+    width: 70px;
+    height: 45px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #ffa41b;
+
+}
+
+.navbar-right {
+    float: right;
 }
 
 /*-------------------------------------*/
@@ -102,8 +122,6 @@ section {
 }
 
 .btn {
-    height: 55px;
-    width: 250px;
     background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
     border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
     border-image-slice: 1;
@@ -112,6 +130,7 @@ section {
     font-family: 'Courgette';
     color: #fff;
     font-weight: 800;
+    padding: 20px 80px;
 }
 
 .btn:hover {
@@ -119,4 +138,143 @@ section {
     background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
     border-image-slice: 1;
     border-width: 4px;
+}
+
+/*---------MEDIA--------------*/
+
+
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+
+    li {
+        font-family: 'Courgette';
+        font-weight: 600;
+        font-size: 17px;
+        color: #fff;
+        text-align: left;
+        line-height: 30px;
+    }
+
+
+    .btn {
+        padding: 10px 15px;
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pad {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 699px) {
+
+     li {
+        font-family: 'Courgette';
+        font-weight: 600;
+        font-size: 17px;
+        color: #fff;
+        text-align: left;
+        line-height: 30px;
+    }
+
+
+    .btn {
+        padding: 10px 15px;
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pad {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    
+    .btn {
+        padding: 15px 20px;
+    }
+    
+     li {
+        font-family: 'Courgette';
+        font-weight: 600;
+        font-size: 22px;
+        color: #fff;
+        text-align: left;
+        line-height: 33px;
+    }
+    .pad {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+
+    li {
+        font-family: 'Courgette';
+        font-weight: 600;
+        font-size: 22px;
+        color: #fff;
+        text-align: left;
+        line-height: 33px;
+    }
+
+
+    .btn {
+        padding: 15px 40px;
+    }
+
+    .pad {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+
+    li {
+        font-family: 'Courgette';
+        font-weight: 600;
+        font-size: 30px;
+        color: #fff;
+        text-align: left;
+        line-height: 45px;
+    }
+    
+    .btn {
+        padding: 20px 60px;
+    }
+
+    .pad {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    
+
+    .navbar {
+        background-color: #333;
+        padding: 40px 20px;
+    }
+    
+    .navbar a {
+        font-size: 30px;
+    }
+    
+    .navbar img {
+    width: 100px;
+    height: 60px;
+}
 }

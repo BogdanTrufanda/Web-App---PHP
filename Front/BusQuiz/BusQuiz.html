@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoMaR</title>
-    <link rel="stylesheet" type="text/css" href="AcademicQuizStyle.css">
+    <link rel="stylesheet" type="text/css" href="BusQuizStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
@@ -11,12 +11,7 @@
 </head>
 <body>
     <div class="navbar">
-        <img class="nav-img" alt="poza" src="logo.png">
-        <div class="navbar-right">
-            <a href="Recommendation.html">Recommendation</a>
-            <a href="User.html">User</a>
-            <a href="Login.html">Logout</a>
-        </div>
+        <img class="nav-img" alt="poza" src="../Resources/logo.png">
     </div>
     <center>
         <h1>Quiz Questions</h1>
@@ -104,6 +99,7 @@
             </div>    
             <div class="form-submission">   
                 <input class="form-btn" id="form-btn-submit" type="button" value="Submit Quiz" onClick="getScore(this.form);">
+                <input class="form-btn" id="form-btn-submit" type="button" value="Bus">
                 <input class="form-btn" id="form-btn-reset" type="reset" value="Clear">
             </div>
             <div class="form-score">
@@ -111,7 +107,7 @@
                 <div class="form-result" id="form-percentage" >Score in percentage = <input class="form-print" type=text size=15 name="percentage"></div>
             </div>
     </form>
-    <form method="post" name="Form" onsubmit="" action="">
+    <form method="post" name="Form" onsubmit="" action="../Recommendation/Recommendation">
     </form>
 <script>
     var numQues = 5;

@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Francois One';
     background-color: green;
-    background: url(back.jpg) no-repeat center center fixed;
+    background: url("../Resources/back.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
