@@ -22,23 +22,23 @@
             <h1>Register</h1>
             <p class="pad">Welcome! Please register so you can get access to your personal Good Manners Recommender!</p>
             <br>
-            <form action="../Login/Login.html">
+            <form action="index.php" method="POST">
                 <input class="inp" type="text" name="uname" placeholder="Enter Username" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits" required><br><br>
                 <input class="inp" type="password" name="password" placeholder="Enter Password" pattern="[A-Za-z0-9]{8,16}"  title="You need at least 8 characters, only letters and digits" required><br><br>
-                <select class="inp1">
+                <select class="inp1" name="continent">
                     <option value="Asia">Asia</option>
                     <option value="America">America</option>
                     <option value="Antarctica">Antartica</option>
                     <option value="Europe">Europe</option>
                     <option value="Australia">Australia</option>
                 </select><br><br>
-                <select class="inp1">
+                <select class="inp1" name="status">
                     <option value="Manager">Manager</option>
                     <option value="Simple">Simple employee</option>
                     <option value="Unemployed">Unemployed</option>
                 </select><br><br>
 
-                <button class="btn">Register</button>
+                <button class="btn" name="buton">Register</button>
             </form>
 
             <h4>Already have an account? <a class="orange" href="../Login/Login.html">Login</a></h4>

@@ -1,0 +1,14 @@
+.alta {
+    height: 40px;
+    width: 400px;
+    color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-family: 'Francois One';
+    margin: auto;
+}
