@@ -34,7 +34,7 @@ body {
 
 h1 {
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #fff;
     font-family: 'Francois One' ;
 }
@@ -55,34 +55,55 @@ h3{
 /*Navbar*/
 /*-------------------------------------*/
 .navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
     background-color: #333;
-    margin: 0;
-    overflow: hidden;
-    color: #fff;
-    height: 3rem;
-    
+    padding: 15px 5px;
 }
-img.nav-img{
-    width: 6rem;
-    margin-left: 1rem;
-}
-div.navbar-right{
-    margin-right: 1rem;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-.navbar-right a{
-    display: block;
-    font-size: 1.6rem;
-    text-decoration: none;
+
+.navbar a {
+    float: left;
     color: white;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.navbar img {
+    width: 70px;
+    height: 45px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #ffa41b;
+
+}
+
+.navbar-right {
+    float: right;
+}
+.button
+{
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    width: 100px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-size: 18px;
+    font-family: 'Courgette';
+    color: #fff;
+    font-weight: 800;
+}
+
+.button:hover {
+    border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    border-image-slice: 1;
+    border-width: 4px;
 }
 /*-------------------------------------*/
 /*Form stuff*/
@@ -209,6 +230,9 @@ input.form-print{
 
 /*MOBILE*/
 @media screen and (min-width: 300px){
+    .navbar a {
+    font-size: 13px;
+    }
     form.form-main{
         margin: 0;
     }
@@ -261,17 +285,52 @@ input.form-print{
         font-weight: 200;
         font-size: 1.2rem;
     }
-    input.form-btn:focus{
+    input.form-btn:hover{
         border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         border-image-slice: 1;
         border-width: 4px;
+    }
+    a.bus-nav{
+        margin-top: 2rem;
+        background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image-slice: 1;
+        border-width: 4px; 
+        font-family: 'Francois One';
+        text-shadow: 1px 1px #FFF;
+        font-weight: 200;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: black;
+        margin-left: 1rem;
+        -webkit-appearance: push-button;
+        user-select: none;
+        white-space: pre;
+        align-items: flex-start;
+        text-align: center;
+        cursor: pointer;
+        color: buttontext;
+        background-color: buttonface;
+        box-sizing: border-box;
+        padding: 1px 6px;
+        border-width: 4px;
+        border-style: outset;
+        border-color: buttonface;
+    }
+    a.bus-nav:hover{
+        border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        border-image-slice: 1;
+        border-width: 4px;
+        cursor: pointer;
     }
     #form-btn-submit{
         margin-right: 1rem;
     }
     #form-btn-reset{
         margin-left: 1rem;
+        margin-right: 1rem;
     } 
     div.form-result{
         font-size: 1.5rem;
@@ -336,17 +395,52 @@ input.form-print{
         font-weight: 200;
         font-size: 2rem;
     }
-    input.form-btn:focus{
+    input.form-btn:hover{
         border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         border-image-slice: 1;
         border-width: 4px;
+    }
+    a.bus-nav{
+        margin-top: 2rem;
+        background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image-slice: 1;
+        border-width: 4px; 
+        font-family: 'Francois One';
+        text-shadow: 1px 1px #FFF;
+        font-weight: 200;
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+        margin-left: 3rem;
+        -webkit-appearance: push-button;
+        user-select: none;
+        white-space: pre;
+        align-items: flex-start;
+        text-align: center;
+        cursor: pointer;
+        color: buttontext;
+        background-color: buttonface;
+        box-sizing: border-box;
+        padding: 1px 6px;
+        border-width: 4px;
+        border-style: outset;
+        border-color: buttonface;
+    }
+    a.bus-nav:hover{
+        border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        border-image-slice: 1;
+        border-width: 4px;
+        cursor: pointer;
     }
     #form-btn-submit{
         margin-right: 3rem;
     }
     #form-btn-reset{
         margin-left: 3rem;
+        margin-right: 3rem;
     } 
     div.form-score{
         display: flex;
@@ -366,8 +460,16 @@ input.form-print{
 
 /*FULL HD land*/
 @media only screen and (min-width: 1700px){
+    .navbar img {
+        height: 120px;
+        width: 150px;
+    }
+    .navbar a {
+        font-size: 43px;
+        padding: 48px;
+    }
     h1{
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
     form.form-main{
         margin: 0;
@@ -428,7 +530,39 @@ input.form-print{
         font-size: 2.5rem;
         padding: 0.3rem;
     }
-    input.form-btn:focus{
+    input.form-btn:hover{
+        border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        border-image-slice: 1;
+        border-width: 4px;
+    }
+    a.bus-nav{
+        background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image-slice: 1;
+        border-width: 4px; 
+        font-family: 'Francois One';
+        text-shadow: 1px 1px #FFF;
+        font-weight: 200;
+        font-size: 2.5rem;
+        padding: 0.3rem;
+        margin-left: 5rem;
+        -webkit-appearance: push-button;
+        user-select: none;
+        white-space: pre;
+        align-items: flex-start;
+        text-align: center;
+        cursor: pointer;
+        color: buttontext;
+        background-color: buttonface;
+        box-sizing: border-box;
+        padding: 1px 6px;
+        border-width: 4px;
+        border-style: outset;
+        border-color: buttonface;
+    }
+    a.bus-nav:hover{
+        cursor: pointer;
         border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         border-image-slice: 1;
@@ -439,6 +573,7 @@ input.form-print{
     }
     #form-btn-reset{
         margin-left: 5rem;
+        margin-right: 5rem;
     } 
     div.form-score{
         display: flex;
