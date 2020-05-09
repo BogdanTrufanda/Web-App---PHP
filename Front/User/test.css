@@ -1,0 +1,204 @@
+/*
+-------------------------------
+FONTS :
+
+font-family: 'Francois One' ;
+font-family: 'Courgette' ;
+-------------------------------
+COLORS :
+
+#fff; (alb)
+#ffa41b , #df7861 (portocaliu 1, portocaliu 2)
+#333 (gri inchis)
+-------------------------------
+*/
+
+/*-------------------------------------*/
+/*General stuff*/
+/*-------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family: 'Francois One';
+    
+}
+
+body {
+    background-color: #333;
+    background-image: url("../Resources/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+span{
+    color: white;
+}
+
+
+.navbar {
+    background-color: #333;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.navbar img {
+    width: 70px;
+    height: 45px;
+} 
+
+.navbar a:hover {
+    border-bottom: 2px solid #ffa41b;
+
+}
+
+.navbar a.active {
+    background-color: #ffa41b;
+    color: white;
+}
+
+.navbar-right {
+    float: right;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.user-name{
+    font-family: 'Francois One';
+}
+span.pic-name{
+    font-family: 'Francois One';
+}
+div.user-name{
+    display: none;
+}
+
+/*Tablets/Ipads*/
+
+@media only screen and (min-width: 766px) {
+    span.pic-name{
+        display: none;
+    }
+    div.user-name{
+        display: block;
+    }
+    main{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap; 
+    }
+    div.user-pic{
+        margin-top: 5%;
+        max-width: 50%;
+        margin-left: 3%;
+    }
+    .pic{
+        display: block;
+        max-width: 300px;
+        height: auto;
+        border-bottom: 500px white;
+        border: 1px solid white;
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    div.user-info{
+        display: flex;
+        margin-left: 3%;
+        max-width: 40%;
+        margin-top: 5%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 2%;
+        padding-bottom: 15%;
+    }
+    div.user-name{
+        font-family: 'Courgette';
+        text-shadow: 1px 1px black;
+        display: flex;
+        align-items: center;
+    }
+    span.name{
+        font-size: 4.5vw;
+        text-shadow: 1px 1px black;
+        text-decoration: underline white;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    div.user-info-specific{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    span.info-category, .info{
+        display: block;
+        min-width: auto;
+    }
+    span.info-category{
+        display: block;
+        min-width: 45%;
+        font-size: 2vw;
+        color: gray;
+        text-align: start;
+        text-shadow: 1px 1px back;
+    }
+    span.info{
+        margin-left: 0.5rem;
+        max-width: 50%;
+        font-family: 'Courgette';
+        color: white;
+        text-shadow: 1px 1px black;
+        margin-left: 0.5rem;
+        font-size: 2vw;
+    }div.user-score{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    div.score-category{
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    span.category{
+        display: block;
+        width: 50%;
+        font-size: 2.5vw;
+        font-family: 'Francois One';
+        color: gray;
+        text-align: start;
+        text-shadow: 1px 1px black;
+    }
+    span.score{
+        margin-left: 0.5rem;
+        width: auto;
+        font-family: 'Courgette';
+        color: white;
+        text-shadow: 1px 1px black;
+        margin-left: 0.5rem;
+        font-size: 2.5vw;
+    }
+    
+}

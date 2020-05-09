@@ -1,0 +1,39 @@
+1 How should you treat elders ?
+11 1 with respect
+12 0 with indifference
+13 0 like equals
+
+2 What should you add to your contract ?
+21 1 a deadline
+22 0 a price
+23 0 a dotted line
+
+3 What is the attitude used to approach negotiations ?
+31 1 seeking a mutually beneficial agreeement
+32 0 seeking a personal benefit
+33 0 seeking the benefit of the customer
+
+4 Should the deadline on the contract be viewed as flexible ?
+41 1 yes
+42 0 no
+43 0 sometimes
+
+5 How should you set the price with regard to the services you would get ?
+51 1 close
+52 0 far
+53 0 precisely
+
+6 What is the name of the code you have to adhere to in the office ?
+61 1 dress code
+62 0 rule code
+63 0 thumb code
+
+7 What is one thing you shouldn't spend your time on while on the job ?
+71 1 personal calls
+72 0 filing documents
+73 0 socializing
+
+8 How should you be with regard to breaks, deadlines or lunch hour ?
+81 1 punctual
+82 0 late
+83 0 indifferent

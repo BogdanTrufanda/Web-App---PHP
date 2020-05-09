@@ -47,7 +47,7 @@ span{
 /*-------------------------------------*/
 .navbar {
     background-color: #333;
-    padding: 15px 5px;
+    padding: 20px 10px;
 }
 
 .navbar a {
@@ -71,31 +71,55 @@ span{
 
 }
 
+.navbar a.active {
+    background-color: #ffa41b;
+    color: white;
+}
+
 .navbar-right {
     float: right;
 }
-.button
-{
-    margin: 0 auto;
-    display: block;
-    height: 30px;
-    width: 100px;
-    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-    border-image-slice: 1;
-    border-width: 4px;
-    font-size: 18px;
-    font-family: 'Courgette';
+
+/*
+
+.logo {
+    height: 60px;
+    width: 110px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
     color: #fff;
-    font-weight: 800;
+     height: 80px; 
 }
 
-.button:hover {
-    border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
-    background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
-    border-image-slice: 1;
-    border-width: 4px;
+img.nav-img{
+    width: 6rem;
+    margin-left: 1rem;
 }
+div.navbar-right{
+    margin-right: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.navbar-right a{
+    display: block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+*/
 /*-------------------------------------*/
 /*Main*/
 /*-------------------------------------*/
@@ -115,18 +139,42 @@ span.pic-name{
 div.user-name{
     display: none;
 }
+form.user-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+input.user-btn{
+        height: 3rem;
+        background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+        border-image-slice: 1;
+        border-width: 4px; 
+        font-family: 'Francois One';
+        text-shadow: 1px 1px #FFF;
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+    input.user-btn:focus{
+        border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
+        border-image-slice: 1;
+        border-width: 4px;
+    }
+    input.user-btn:hover{
+        cursor: pointer;
+    }
 
 /*-------------------------------------*/
 /*Responsive Web Design*/
 /*-------------------------------------*/
 
 /*MOBILE*/
+
 @media screen and (min-width: 300px) and (max-width: 765px) {
-    .navbar a {
-    font-size: 13px;
-    }
     div.user-pic{
-        max-width: 60%;
+        max-width: 70%;
         margin-top: 10%;
         margin-bottom: 5%;
         display: flex;
@@ -214,17 +262,19 @@ div.user-name{
         font-size: 3.5vw;
     }
     div.user-pic{
-        max-width: 70%;
+        max-width: 80%;
     }
     img.pic{
-        max-width: 300px;
+        max-width: 400px;
         width: 100%;
         height: auto;
     }
     
 }
 
+
 /*Tablets/Ipads*/
+
 @media only screen and (min-width: 766px) {
     span.pic-name{
         display: none;
@@ -240,7 +290,7 @@ div.user-name{
     div.user-pic{
         margin-top: 5%;
         max-width: 50%;
-        margin-left: 8%;
+        margin-left: 3%;
     }
     img.pic{
         display: block;
@@ -251,14 +301,14 @@ div.user-name{
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     div.user-info{
-        display: block;
-        margin-left: 5%;
-        width: 40vw;
-        margin-top: 3%;
+        display: flex;
+        margin-left: 3%;
+        max-width: 40%;
+        margin-top: 5%;
         justify-content: flex-start;
         flex-wrap: wrap;
         padding-top: 2%;
-        padding-bottom: 15%;
+        /*padding-bottom: 15%;*/
     }
     div.user-name{
         font-family: 'Courgette';
@@ -332,17 +382,10 @@ div.user-name{
     
 }
 
+
+
 /*FULL HD land*/
 @media only screen and (min-width: 1700px){
-    .navbar img {
-        height: 120px;
-        width: 150px;
-
-    }
-    .navbar a {
-        font-size: 43px;
-        padding: 48px;
-    }
     span.pic-name{
         display: none;
     }
@@ -361,7 +404,7 @@ div.user-name{
     }
     img.pic{
         display: block;
-        max-width: 450px;
+        max-width: 500px;
         height: auto;
         border-bottom: 500px white;
         border: 1px solid white;
@@ -369,12 +412,13 @@ div.user-name{
     }
     div.user-info{
         display: flex;
-        margin-left: 6%;
+        margin-left: 3%;
         max-width: 40%;
         margin-top: 5%;
         justify-content: flex-start;
         flex-wrap: wrap;
-        padding-bottom: 15%;
+        padding-top: 2%;
+        /*padding-bottom: 15%;*/
     }
     div.user-name{
         text-shadow: 1px 1px black;
@@ -447,6 +491,7 @@ div.user-name{
         font-size: 2.5vw;
     }
 }
+
 
 
 /*-------------------------------------*/
