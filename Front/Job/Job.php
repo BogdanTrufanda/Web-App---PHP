@@ -3,7 +3,7 @@
 
 if (isset($_SESSION["username"]))
 {
-	$name = $_SESSION["username"];
+    $name = $_SESSION["username"];
     $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
     if (!$con)
         die(mysqli_connect_error());
@@ -22,13 +22,13 @@ if (isset($_SESSION["username"]))
             $user = $col['username'];
             $region = $col['continent'];
             $status = $col['status'];
-            $file = "./BusManners/".$region.".txt";
+            $file = "./JobManners/".$region.".txt";
             $document = file_get_contents($file);
             $lines = explode("\n", $document);            
         }
     }
         $_SESSION["manners"] = $lines;
-        require "Bus.html";
+        require "Job.html";
 }
 else
 {    

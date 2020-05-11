@@ -1,0 +1,12 @@
+.error {
+    height: 40px;
+    width: 400px;
+    color: red;
+    font-size: 27px;
+    font-weight: 300;
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-family: 'Francois One';
+    margin: auto;
+}

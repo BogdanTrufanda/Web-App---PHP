@@ -8,17 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <script src="BusQuiz.js"></script>
 </head>
 <body>
     <div class="navbar">
-            <img alt="poza" src="../Resources/logo.png">
-            <div class="navbar-right">
-                <a href="../Recommendation/Recommendation.html">Recommendation</a>
-                <a href="../User/User.html">User</a>
-                <a href="../Login/Login.html">Logout</a>
-            </div>
-        </div>
+        <img class="nav-img" alt="poza" src="../Resources/logo.png">
+    </div>
     <center>
         <h1>Quiz Questions</h1>
     </center>
@@ -105,10 +99,9 @@
             </div>    
             <div class="form-submission">   
                 <input class="form-btn" id="form-btn-submit" type="button" value="Submit Quiz" onClick="getScore(this.form);">
+                <input class="form-btn" id="form-btn-submit" type="button" onclick="window.location.href = '../Bus/Bus.html';" value="Back">
                 <input class="form-btn" id="form-btn-reset" type="reset" value="Clear">
-                <a class="bus-nav" href="../Bus/Bus.html">Bus</a>
             </div>
-            
             <div class="form-score">
                 <div class="form-result"><span id="form-number">Number of score out of 5 = </span><input class="form-print" type=text size 15 name="mark"></div>
                 <div class="form-result" id="form-percentage" >Score in percentage = <input class="form-print" type=text size=15 name="percentage"></div>
@@ -116,6 +109,41 @@
     </form>
     <form method="post" name="Form" onsubmit="" action="../Recommendation/Recommendation">
     </form>
-
+<script>
+    var numQues = 5;
+    var numChoi = 3;
+    var answers = new Array(15);
+    answers[0] = "doesn't like";
+    answers[1] = "don't come";
+    answers[2] = "come";
+    answers[3] = "don't";
+    answers[4] = "doesn't make";
+    function getScore(form) {
+        var score = 0;
+        var currElt;
+        var currSelection;
+        for (i = 0; i < numQues; i++) {
+            currElt = i * numChoi;
+            answered = false;
+            for (j = 0; j < numChoi; j++) {
+                currSelection = form.elements[currElt + j];
+                if (currSelection.checked) {
+                    answered = true;
+                    if (currSelection.value == answers[i]) {
+                        score++;
+                        break;
+                    }
+                }
+            }
+            if (answered === false) {
+                alert("Do answer all the questions, Please");
+                return false;
+            }
+        }
+        var scoreper = Math.round(score / numQues * 100);
+        form.percentage.value = scoreper + "%";
+        form.mark.value = score;
+    }
+</script>
 </body>
 </html>

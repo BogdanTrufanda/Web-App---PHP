@@ -22,7 +22,14 @@
             <h1>Register</h1>
             <p class="pad">Welcome! Please register so you can get access to your personal Good Manners Recommender!</p>
             <br>
-            <form action="index.php" method="POST">
+                    <?php
+              if (isset($_SESSION['error2'])) 
+                if ($_SESSION["error2"] == 1)
+                    echo '<p class="error">
+                        There is already someone with that username!    
+                        </p>';
+        ?>
+            <form action="" method="POST">
                 <input class="inp" type="text" name="uname" placeholder="Enter Username" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits" required><br><br>
                 <input class="inp" type="password" name="password" placeholder="Enter Password" pattern="[A-Za-z0-9]{8,16}"  title="You need at least 8 characters, only letters and digits" required><br><br>
                 <select class="inp1" name="continent">
@@ -41,7 +48,7 @@
                 <button class="btn" name="buton">Register</button>
             </form>
 
-            <h4>Already have an account? <a class="orange" href="../Login/Login.html">Login</a></h4>
+            <h4>Already have an account? <a class="orange" href="../Login/Login.php">Login</a></h4>
 
         </section>
 

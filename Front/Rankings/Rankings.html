@@ -27,64 +27,85 @@
             <div class="box">
                 <h4>Traffic </h4>
                 <ul>
-                    <li>Bogdan Trufanda, 100 Pct</li>
-                    <li>Robert Rauleac, 80 Pct</li>
-                    <li>Abel Mendela, 70 Pct</li>
-                    <li>Robert Rauleac, 60 Pct</li>
-                    <li>Abel Mendela, 50 Pct</li>
+                <?php
+
+                    foreach($_SESSION['traffic'] as $key=>$value)
+                        {
+                            echo "<li>" . $key . ", ". $value ." pts" ."</li>";
+                        }
+
+                ?>
                 </ul>
             </div>
             <div class="box">
                 <h4>Table</h4>
                 <ul>
-                    <li>Abel Mendela, 100 Pct</li>
-                    <li>Robert Rauleac, 80 Pct</li>
-                    <li>Numehghfghgfh, 70 Pct</li>
-                    <li>Bogdan Trufanda, 60 Pct</li>
-                    <li>Numehghfghgfh, 50 Pct</li>
+                <?php
+
+                    foreach($_SESSION['table'] as $key=>$value)
+                        {
+                            echo "<li>" . $key . ", ". $value ." pts"."</li>";
+                        }
+
+                ?>
                 </ul>
             </div>  
             <div class="box">
                 <h4>Internet</h4>
                 <ul>
-                    <li>Bogdan Trufanda, 100 Pct</li>
-                    <li>Numehghfghgfh, 80 Pct</li>
-                    <li>Robert Rauleac, 70 Pct</li>
-                    <li>Numehghfghgfh, 60 Pct</li>
-                    <li>Abel Mendela, 50 Pct</li>
+                <?php
+
+                    foreach($_SESSION['internet'] as $key=>$value)
+                        {
+                            echo "<li>" . $key . ", ". $value ." pts"."</li>";
+                        }
+
+                ?>
                 </ul>
             </div>
             <div class="box">
                 <h4>Church</h4>
                 <ul>
-                    <li>Numehghfghgfh, 100 Pct</li>
-                    <li>Abel Mendela, 80 Pct</li>
-                    <li>Numehghfghgfh, 70 Pct</li>
-                    <li>Numehghfghgfh, 60 Pct</li>
-                    <li>Numehghfghgfh, 50 Pct</li>
+                <?php
+
+                    foreach($_SESSION['church'] as $key=>$value)
+                        {
+                            echo "<li>" . $key . ", ". $value ." pts"."</li>";
+                        }
+
+                ?>
                 </ul>
             </div>
             <div class="box">
                 <h4>Job</h4>
                 <ul>
-                    <li>Numehghfghgfh, 100 Pct</li>
-                    <li>Abel Mendela, 80 Pct</li>
-                    <li>Abel Mendela, 70 Pct</li>
-                    <li>Abel Mendela, 60 Pct</li>
-                    <li>Abel Mendela, 50 Pct</li>
+                <?php
+
+                    foreach($_SESSION['job'] as $key=>$value)
+                        {
+                            echo "<li>" . $key . ", ". $value ." pts"."</li>";
+                        }
+
+                ?>
                 </ul>
             </div>
             <div class="box">
                 <h4>Bus</h4>
                 <ul>
-                    <li>Numehghfghgfh, 100 Pct</li>
-                    <li>Abel Mendela, 80 Pct</li>
-                    <li>Abel Mendela, 70 Pct</li>
-                    <li>Abel Mendela, 60 Pct</li>
-                    <li>Bogdan Trufanda, 50 Pct</li>
+                <?php
+
+                    foreach($_SESSION['bus'] as $key=>$value)
+                        {
+                            echo "<li>" . $key . ", ". $value ." pts"."</li>";
+                        }
+
+                ?>
                 </ul>
             </div>
         </div>
-        <button type="button" class="button">RSS</button><br>
+        <br>
+                <form action="" method="post">
+        <button class="button" name='RSS' target="_blank">RSS</button>
+                           </form>
     </body>
 </html>
