@@ -1,0 +1,39 @@
+1 What you shoul form when boarding on a bus?
+11 1 an orderly line
+12 0 an orderly circle and an orderly line
+13 0 an orderly square and an orderly line
+
+2 What not to block in a bus? 
+21 1 the doors or the passagers that exit the bus
+22 0 the doors or the windows
+23 0 the passagers that exit the bus or the windows
+
+3 What not to bring inside the bus?
+31 1 drinks or food and occupies a lot of space
+32 0 drinks or food and and phones
+33 0 drinks or food and laptops
+
+4 What should you do inside a crowded vehicle?
+41 1 remove your backpack and try not to bring any occupies a lot of space
+42 0 remove your backpack and your hat
+43 0 remove your backpack and try to get out
+
+5 What shoud let do?
+51 1 refrain from having loud conversations and talk softly and quietly
+52 0 refrain from having loud conversations but only with people they know
+53 0 refrain from having loud conversations and don't use the phone
+
+6 Should you pay your fare? 
+61 1 yes and do not fare evade
+62 0 no and try to fare evade
+63 0 maybe a little bit of both
+
+7 What you should cover when you sneeze or cough?
+71 1 your mouth 
+72 0 your mouth and nouse 
+73 0 your mouth and ears
+
+8 What you should refrain from doing on to the bus on the verge of departure?
+81 1 especially running 
+82 0 especially running and singubg in the same time
+83 0 especially running and talnking in the same time
