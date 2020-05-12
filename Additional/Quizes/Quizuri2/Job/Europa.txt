@@ -1,0 +1,39 @@
+1 How should you be with regard to breaks, deadlines or lunch hour ?
+11 1 punctual
+12 0 late
+13 0 indifferent
+
+2 What should you mind when talking in the office ?
+21 1 your language
+22 0 your intellect
+23 0 your clothes
+
+3 What should you do with your co-workers ?
+31 1 respect them
+32 0 gossip about them
+33 0 make life hard for them
+
+4 How should your clothes be in the office ?
+41 1 clean and ironed
+42 0 dirty and rugged
+43 0 clean and rugged
+
+5 What is the thing you should never do about your co-workers ?
+51 1 gossip about them
+52 0 respect them
+53 0 socialize with them
+
+6 What is the name of the code you have to adhere to in the office ?
+61 1 dress code
+62 0 rule code
+63 0 thumb code
+
+7 What is one thing you shouldn't spend your time on while on the job ?
+71 1 personal calls
+72 0 filing documents
+73 0 socializing
+
+8 What is one thing to rely on if you're at a standstill ?
+81 1 honesty
+82 0 social skills
+83 0 fun
