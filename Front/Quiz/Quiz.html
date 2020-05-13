@@ -16,20 +16,23 @@
     <center>
         <h1>Quiz Questions</h1>
     </center>
+    	<div id="disp" style= 
+		"color:white; font-size:18px; font-weight:bold;"> 
+	</div> 
     <br>
-        <form method = "post" action="" class="form-main" style="color: #fff">
+        <form class="form-main" style="color: #fff">
              <div  class="form-section">   
                 <h3 class="form-question"><b>Question 1.
                 <br> <?php if(isset($_SESSION["questionsanswers"])){ echo substr($_SESSION["questionsanswers"][0][0], 2); }  ?><br></b></h3>
                 <blockquote>
                     <div class="form-answer">            
-                        <input class="radio-btn" type="radio" name="q1"  value="100"><span class="radio-string"><?php if(isset($_SESSION["questionsanswers"])){ echo substr($_SESSION["questionsanswers"][0][1], 5); }  ?></span><br>
+                        <input class="radio-btn" type="radio" name="q1"  id ="p1" value="100"><span class="radio-string"><?php if(isset($_SESSION["questionsanswers"])){ echo substr($_SESSION["questionsanswers"][0][1], 5); }  ?></span><br>
                     </div>    
                     <div class="form-answer">    
-                        <input class="radio-btn" type="radio" name="q1"  value="010"><span class="radio-string"><?php if(isset($_SESSION["questionsanswers"])){ echo substr($_SESSION["questionsanswers"][0][2], 5); }  ?></span><br>
+                        <input class="radio-btn" type="radio" name="q1"  id ="p2" value="010"><span class="radio-string"><?php if(isset($_SESSION["questionsanswers"])){ echo substr($_SESSION["questionsanswers"][0][2], 5); }  ?></span><br>
                     </div>    
                     <div class="form-answer">    
-                        <input class="radio-btn" type="radio" name="q1"  value="001"><span class="radio-string"><?php if(isset($_SESSION["questionsanswers"])){ echo substr($_SESSION["questionsanswers"][0][3], 5); }  ?></span><br>
+                        <input class="radio-btn" type="radio" name="q1"  id ="p3" value="001"><span class="radio-string"><?php if(isset($_SESSION["questionsanswers"])){ echo substr($_SESSION["questionsanswers"][0][3], 5); }  ?></span><br>
                     </div>
                 </blockquote>
             </div> 
@@ -98,8 +101,46 @@
                 </blockquote>
             </div>    
             <div class="form-submission">
-                          <input class="form-btn" id="form-btn-submit" name="buton" type="submit" value="Submit">
+                
+                          <input type="button" class="form-btn" name="buton" value= "Submit" onClick="getScore(this.form);">
             </div>
     </form>
 </body>
+    	<script type="text/javascript">
+    var numQues = 5;
+    var numChoi = 3;
+    var answers = new Array(15);
+    var contor = 0;
+            document.write (contor);
+            document.write ("1111ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd");
+    answers[0] = "dummy1";
+    answers[1] = "dummy2";
+    answers[2] = "dummy3";
+    answers[3] = "dummy4";
+    answers[4] = "dummy5";
+    function getScore(form) {
+            document.write ("a intrat in functie");
+        var currElt;
+        var currSelection;
+        for (i = 0; i < numQues; i++) {
+            for (j = 0; j < numChoi; j++) {
+                currSelection = form.elements[currElt + j];
+                if (currSelection.checked) {
+                    contor = contor + 1;
+                }
+            }
+        }
+        document.write (contor);
+        document.write ("22222ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd");
+            if (contor == 0) {
+                alert("Do answer all the questions, Please");
+                return false;
+            }
+            else
+                {
+                    window.location.replace("http://stackoverflow.com");
+                }
+        }
+
+</script>
 </html>

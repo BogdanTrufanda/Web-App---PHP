@@ -30,28 +30,13 @@ $job_score = $col['job_score'];
 }
 
 }
-else
-{
- $sql = "SELECT username, continent, status FROM users WHERE username = '$name'";
-$interogare = mysqli_query($con,$sql);
-    while ($col = $interogare->fetch_assoc())
-{
-$user = $col['username'];
-$region = $col['continent'];
-$status = $col['status'];
-$table_score = 0;
-$bus_score = 0;
-$church_score = 0;
-$traffic_score = 0;
-$internet_score = 0;
-$job_score = 0;
-    }
-}
     require 'User.html';
-    mysqli_close($con);
+    mysqli_close($con); 
 }
 else
-    {    header("Location: ../Login/Login.php");
-    exit;}
+    {    
+    header("Location: ../Login/Login.php");
+    exit;
+    }
 ?>
 
