@@ -1,0 +1,39 @@
+1 What you should respect? 
+11 0 other people's opinion
+12 1 other people's job
+13 1 other people's shoes
+
+2 In which case you should never post a picture of someone else?
+21 0 when you don't have their permission
+22 1 when you don't like the picture
+23 1 when you like the picture
+
+3 How should you treat others?
+31 0 as you would like to be treated
+32 1 as you would like to be made fun of
+33 1 as you would like to be ignored
+
+4 What you should not do in an online chat?
+41 0 make fun of someone
+42 1 chat with people
+43 1 send pictures 
+
+5 What you should verify before reposting? 
+51 0 facts 
+52 1 your email
+53 1 facebook
+
+6 What not to do behind peoples backs?
+61 0 talk 
+62 1 eat
+63 1 look
+
+7 What not to post on the internet? 
+71 0 private or embarrassing images or comments
+72 1 gifs
+73 1 songs
+
+8 What should we careful with that can emphasized words?
+81 0 CAPS
+82 1 language
+83 1 colors

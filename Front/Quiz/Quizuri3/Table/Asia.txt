@@ -1,0 +1,39 @@
+1 What should you remove before stepping on tatami?
+11 0 shoes and slippers 
+12 1 shoes and hats 
+13 1 hats and slippers
+
+2 What you should do to say thank you for the food?
+21 0 slurp and also say "aricato"
+22 1 slurp and tipp 
+23 1 tipp and say "aricato"
+
+3 What to do after you are done chewing?
+31 0 sip or swallow a drink
+32 1 sip or fart
+33 1 fart or swallow a drink
+
+4 Where to keep your phone at the table?
+41 0 off the table but don't check any messages on it
+42 1 off the table but you can still check messages on it
+43 1 on the table but don't check any messages on it
+
+5 What at the table is considered bad manners? 
+51 0 blowing nose and burping and audible munching 
+52 1 blowing nose and burping 
+53 1 blowing nose
+
+6 What you should do if you don't get to something across the table?
+61 0 ask for it and also thank you to the person that helped you
+62 1 ask for it and tipp the person that helped you
+63 1 ask for it and give the person that helped you some of your food
+
+7 How should you chew your food?
+71 0 with your mouth closed and as quite as possible
+72 1 with your mouth opened but as quite as possible
+73 1 with your mouth closed and as loud as possible
+
+8 What not to put on the table while eating?
+81 0 your elbows and you phone
+82 1 your phone and your hands
+83 1 your hands and your elbow

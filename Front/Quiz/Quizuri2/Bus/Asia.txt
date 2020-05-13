@@ -1,0 +1,39 @@
+1 Should you Set smartphones and cell phones to silent mode?
+11 0 yes
+12 1 no
+13 1 maybe
+
+2 What not to block in a bus? 
+21 0 the doors
+22 1 the windows
+23 1 the other people on the bus
+
+3 What not to bring inside the bus?
+31 0 drinks or food
+32 1 drinks or bags
+33 1 food or phones
+
+4 What should you remove inside a crowded vehicle?
+41 0 your backpack 
+42 1 your hat
+43 1 your glasses
+
+5 What you shoud let passengers do?
+51 0 exit first
+52 1 enter first
+53 1 both
+
+6 Should you pay your fare? 
+61 0 yes
+62 1 no
+63 1 maybe
+
+7 What you should cover when you sneeze or cough?
+71 0 your mouth 
+72 1 your ears
+73 1 your face
+
+8 What you should refrain from doing on to the bus on the verge of departure?
+81 0 especially running 
+82 1 especially talking
+83 1 especially walking
