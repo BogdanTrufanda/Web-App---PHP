@@ -67,7 +67,7 @@ if (isset($_SESSION["username"]))
      
         unset($_SESSION["answerstring"]);
         unset($_SESSION["userinput"]);
-                         mysqli_close($con);
+        mysqli_close($con);
 
 }
     else

@@ -3,8 +3,8 @@
 
 if (isset($_SESSION["username"]))
 {
-//    if (!isset($_SESSION["answerstring"]))
-//    {
+    if (!isset($_SESSION["answerstring"]))
+    {
         
     $name = $_SESSION["username"];
     $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
@@ -62,23 +62,30 @@ if (isset($_SESSION["username"]))
     $_SESSION["questionsanswers"] = $questions_and_answers;
     $_SESSION["answerstring"] = $generated_answer_string;
     require "Quiz.html";
-//    }
-//    else
-//    {
-//    if (isset($_POST["buton"]))
-//    {
-//        $stringuser = "";
-//        $stringuser = $stringuser . $_POST['q1'] . $_POST['q2'] . $_POST['q3'] . $_POST['q4'] . $_POST['q5'];
-//        $_SESSION['userinput'] = $stringuser;
-//        header("Location: rezultatuser.php");    
-//    }
-//        else
-//        {
-//            unset($_SESSION["answerstring"]);
-//            header('Location: '.$_SERVER['PHP_SELF']);
-//            die;
-//        }
-//    }
+    }
+    else
+    {
+    if (isset($_POST["buton"]))
+    {
+        if (isset($_POST['q1']) && isset($_POST['q2']) && isset($_POST['q3']) && isset($_POST['q4']) && isset($_POST['q5']))
+        {
+        $stringuser = "";
+        $stringuser = $stringuser . $_POST['q1'] . $_POST['q2'] . $_POST['q3'] . $_POST['q4'] . $_POST['q5'];
+        $_SESSION['userinput'] = $stringuser;
+        header("Location: rezultatuser.php");    
+        }
+        else
+        {
+            require "Quiz.html";
+        }
+    }
+        else
+        {
+            unset($_SESSION["answerstring"]);
+            header('Location: '.$_SERVER['PHP_SELF']);
+            die;
+        }
+    }
 }
 
 else
