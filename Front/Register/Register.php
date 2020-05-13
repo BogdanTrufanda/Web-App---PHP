@@ -1,11 +1,5 @@
 <?php
 session_start(); 
-unset ($_SESSION["FirstVisit"]);
-if (!isset($_SESSION['FirstVisit2'])) {
-    $_SESSION['FirstVisit2'] = 1;
-    $_SESSION['error2'] = 0;
-    }
-
 require 'Register.html';
 
 if (isset($_POST['buton']))
@@ -29,12 +23,11 @@ if($interogare->num_rows == 0)
 {
 	$sql = "insert into users (Username, Password, Continent, Status) VALUES ('$name', '$pass','$continent','$status')";
 	$interogare = mysqli_query($con,$sql);
-    unset ($_SESSION["FirstVisit2"]);
     header("Location: ../Login/Login.php");
 }
 else
 {
-    $_SESSION['error2'] = 1;
+    $_SESSION['errorregister'] = 1;
     header("Location: Register.php");
 }   
 

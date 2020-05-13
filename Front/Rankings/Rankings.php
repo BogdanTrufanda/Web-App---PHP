@@ -37,11 +37,6 @@ $_SESSION["job"] = array_slice($jobscorearray, 0, 5, true);
 
 
 require "Rankings.html";
-if (isset($_POST['RSS']))
-{
-    header("Location: RSS.php");
-    exit;
-}
 mysqli_close($con);
 }
 else

@@ -48,6 +48,7 @@ $job_score = 0;
     }
 }
     require 'User.html';
+    mysqli_close($con);
 }
 else
     {    header("Location: ../Login/Login.php");

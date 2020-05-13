@@ -23,11 +23,13 @@
         <p class="pad">Welcome back! Log in to get access to your personal Good Manners Recommender!</p>
         <br>
         <?php
-              if (isset($_SESSION['error'])) 
-                if ($_SESSION["error"] == 1)
-                    echo '<p class="error">
+              if (isset($_SESSION['errorlogin'])) 
+                if ($_SESSION["errorlogin"] == 1)
+                    {echo '<p>
                         Wrong creditentials!    
                         </p>';
+                    $_SESSION["errorlogin"] = 0;
+                    }
         ?>
         <form action="" method="post">
             <input class="inp" type="text" name="uname" placeholder="Enter Username" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits" required><br><br>

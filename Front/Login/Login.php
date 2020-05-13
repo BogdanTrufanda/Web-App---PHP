@@ -1,12 +1,6 @@
 <?php
 
 session_start(); 
-unset ($_SESSION["FirstVisit2"]);
-
-if (!isset($_SESSION['FirstVisit'])) {
-    $_SESSION['FirstVisit'] = 1;
-    $_SESSION['error'] = 0;
-    }
 
 if (isset($_SESSION["username"]))
 {session_unset(); 
@@ -33,7 +27,7 @@ $interogare = mysqli_query($con,$sql);
 
 if($interogare->num_rows == 0)
 {
-    $_SESSION['error'] = 1;
+    $_SESSION['errorlogin'] = 1;
     header("Location: Login.php");
 }
 else
@@ -53,12 +47,11 @@ if (mysqli_num_rows($interogare) > 0)
 
 if (strcmp($parola,$pass) != 0)
 {
-    $_SESSION['error'] = 1;
+    $_SESSION['errorlogin'] = 1;
     header("Location: Login.php");
 }
 else
 {
-        unset ($_SESSION["FirstVisit"]);
         $_SESSION["username"] = $name;
       header("Location: ../Recommendation/Recommendation.html");
       exit;

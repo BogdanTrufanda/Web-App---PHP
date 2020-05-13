@@ -1,0 +1,39 @@
+1 Which should you not do at the church ?
+11 1 chew gum
+12 0 be quiet
+13 0 whisper
+
+2 What should you do with your cell phone before entering a church ?
+21 1 put it on silent or turn it off
+22 0 leave it be
+23 0 turn up the ringtone volume
+
+3 Where are families with children most comfortable sitting ?
+31 1 in the back
+32 0 in the front
+33 0 in the middle
+
+4 When is it better to arrive at church ?
+41 1 before the service starts
+42 0 when the service starts
+43 0 after the service starts
+
+5 What shouldn't you wear no matter the case ?
+51 1 clothes that are too tight or too revealing
+52 0 clothes that are modest
+53 0 clothes that are rugged
+
+6 When should you find out what the policy on children is at the church you will be attending ?
+61 1 before you take your children
+62 0 when you take your children
+63 0 after you take your children
+
+7 What is one of the most important things you can do when attending church ?
+71 1 be respectful
+72 0 be humble
+73 0 be hot-headed
+
+8 Which of the following gives you the opportunity to get the most out of the service ?
+81 1 paying attention
+82 0 being curious
+83 0 being shy

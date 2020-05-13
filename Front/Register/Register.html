@@ -23,11 +23,13 @@
             <p class="pad">Welcome! Please register so you can get access to your personal Good Manners Recommender!</p>
             <br>
                     <?php
-              if (isset($_SESSION['error2'])) 
-                if ($_SESSION["error2"] == 1)
-                    echo '<p class="error">
+              if (isset($_SESSION['errorregister'])) 
+                if ($_SESSION["errorregister"] == 1)
+                    {echo '<p>
                         There is already someone with that username!    
                         </p>';
+                    $_SESSION["errorregister"] = 0;
+                    }
         ?>
             <form action="" method="POST">
                 <input class="inp" type="text" name="uname" placeholder="Enter Username" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits" required><br><br>
