@@ -1,0 +1,39 @@
+1 What should you remove before stepping on tatami?
+11 1 shoes
+12 0 hats 
+13 0 glasses
+
+2 What you should do to say thank you for the food?
+21 1 slurp 
+22 0 eat
+23 0 don't eat
+
+3 What to do after you are done chewing?
+31 1 swallow a drink
+32 0 take another bite
+33 0 stop eating
+
+4 Where to keep your phone at the table?
+41 1 off the table
+42 0 on the table
+43 0 under the table
+
+5 What at the table is considered bad manners? 
+51 1 blowing nose 
+52 0 tipping
+53 0 singing
+
+6 What you should do if you don't get to something across the table?
+61 1 ask for it
+62 0 fight for it
+63 0 scream for it
+
+7 How should you chew your food?
+71 1 with your mouth closed 
+72 0 with your mouth opened
+73 0 with your mouth dosen't matter how
+
+8 What not to put on the table while eating?
+81 1 your elbows 
+82 0 your hands
+83 0 both

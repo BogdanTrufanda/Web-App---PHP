@@ -1,0 +1,39 @@
+1 Can accidents happen when driving slowly ?
+11 1 yes
+12 0 no
+13 0 sometimes
+
+2 When it comes to music you should:
+21 1 keep it to yourself
+22 0 blast it out of the car
+23 0 impose your music over what others want
+
+3 If someone is waiting to turn into a parking space you should:
+31 1 let them have it
+32 0 steal it
+33 0 curse them
+
+4 How should you park ?
+41 1 within your own box
+42 0 covering two parking slots
+43 0 obliquely
+
+5 Is avoiding an accident considered a necessary situation to use your horn ?
+51 1 yes
+52 0 no
+53 0 sometimes
+
+6 What are considered distractions when driving ?
+61 1 putting on makeup, snacking or texting
+62 0 snacking, texting and traffic signs
+63 0 traffic signs, putting on makeup and pedestrians
+
+7 When is it a must to use your turning signal ?
+71 1 when switching lanes or turning a corner
+72 0 when turning a cover or when your car malfunctioned
+73 0 when parking and when switching lanes
+
+8 Can distractions interfere with your ability to drive ?
+81 1 yes
+82 0 no
+83 0 sometimes

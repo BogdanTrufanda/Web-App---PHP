@@ -1,0 +1,39 @@
+1 Set smartphones and cell phones to _____. 
+11 1 silent mode
+12 0 max volume
+13 0 airplane mode
+
+2 Do not block the _____. 
+21 1 doors
+22 0 windows
+23 0 seats
+
+3 Don't bring _____ inside.
+31 1 drinks or food
+32 0 bags
+33 0 phones
+
+4 Remove your _____ inside a crowded vehicle. 
+41 1 backpack 
+42 0 hat
+43 0 glasses
+
+5 Let passengers _____ first.
+51 1 exit 
+52 0 come in
+53 0 seat
+
+6 Do not _____. 
+61 1 litter
+62 0 talk
+63 0 smile
+
+7 Cover your _____ when you sneeze or cough. 
+71 1 mouth 
+72 0 ears
+73 0 eyes
+
+8 Please refrain from _____ on to the bus on the verge of departure. 
+81 1 running 
+82 0 talking
+83 0 walking
