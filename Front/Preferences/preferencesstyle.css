@@ -12,12 +12,13 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 /*-------------------------------------*/
 /*Navbar*/
 /*-------------------------------------*/
 .navbar {
     background-color: #333;
-    padding: 15px 5px;
+    padding: 20px 10px;
 }
 
 .navbar a {
@@ -26,9 +27,8 @@ body {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 25px;
-
 }
 
 .navbar img {
@@ -44,6 +44,7 @@ body {
 .navbar-right {
     float: right;
 }
+
 /*-------------------------------------*/
 /*Body*/
 /*-------------------------------------*/
@@ -53,7 +54,7 @@ h1 {
     font-weight: 800;
     font-size: 60px;
     color: #fff;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 }
 
 h4 {
@@ -71,6 +72,12 @@ p {
 
 .orange {
     color: #ffa41b;
+}
+
+.err {
+    color: red;
+    font-family: 'Francois One';
+    font-size: 25px;
 }
 
 /*-------------------------------------*/
@@ -118,7 +125,7 @@ section {
     font-family: 'Francois One';
 }
 
-select option{
+select option {
     display: block;
     margin: 0 auto;
 }
@@ -150,13 +157,21 @@ select option{
 
 /*MOBILE*/
 @media only screen and (min-width: 300px) and (max-width: 450px) {
+    
+    
     .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
     font-size: 13px;
+    line-height: 25px;
 }
 
     h1 {
         font-size: 40px;
-        padding-left: 20px;
+
     }
 
 
@@ -165,26 +180,25 @@ select option{
         padding-left: 50px;
         padding-right: 50px;
 
-    }  
+    }
 
-    .inp 
-    {
+    .inp {
         height: 30px;
-        width: 260px; 
+        width: 260px;
         /*
         padding-right: 555px;
         padding-left: 5px;
         */
     }
-    .inp1 
-    {
+
+    .inp1 {
         height: 40px;
-        width: 310px; 
+        width: 310px;
     }
-    .btn
-    {
+
+    .btn {
         height: 40px;
-        width: 310px; 
+        width: 310px;
     }
 
 
@@ -198,42 +212,43 @@ select option{
 /*Tables/Ipads*/
 @media only screen and (min-width: 766px) and (max-width: 1367px) {
 
-        .navbar a {
-    font-size: 28px;
-}
+    .navbar a {
+        font-size: 28px;
+    }
 
     h1 {
         font-size: 60px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
-.navbar img {
-    width: 80px;
-    height: 65px;
-}
+    .navbar img {
+        width: 80px;
+        height: 65px;
+    }
+
     .pad {
         font-size: 30px;
         padding-left: 50px;
         padding-right: 50px;
 
-    }  
+    }
 
-    .inp 
-    {
+    .inp {
         height: 50px;
-        width: 500px; 
+        width: 500px;
 
     }
-    .inp1 
-    {
+
+    .inp1 {
         height: 62px;
-        width: 550px;  
+        width: 550px;
     }
-    .btn
-    {
+
+    .btn {
         height: 62px;
-        width: 550px; 
+        width: 550px;
     }
+
     h4 {
         font-size: 35px;
     }
@@ -243,15 +258,14 @@ select option{
 }
 
 /*FULL HD land*/
-@media only screen and (min-width: 1700px)
-{
+@media only screen and (min-width: 1700px) {
     .navbar a {
-    font-size: 38px;
-}
+        font-size: 38px;
+    }
 
     h1 {
         font-size: 80px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
 
@@ -260,24 +274,24 @@ select option{
         padding-left: 50px;
         padding-right: 50px;
 
-    }  
+    }
 
-    .inp 
-    {
+    .inp {
         height: 55px;
-        width: 550px; 
+        width: 550px;
 
     }
-    .inp1 
-    {
+
+    .inp1 {
         height: 75px;
-        width: 600px;  
+        width: 600px;
     }
-    .btn
-    {
+
+    .btn {
         height: 75px;
-        width: 600px;  
+        width: 600px;
     }
+
     h4 {
         font-size: 40px;
     }
@@ -285,16 +299,23 @@ select option{
 
 
 }
+
 /*FULL HD 2*/
-@media only screen and (min-width: 1000px) and (min-height: 1300px)
-{
+@media only screen and (min-width: 1000px) and (min-height: 1300px) {
     .navbar a {
-    font-size: 32px;
-}
+        font-size: 28px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar {
+        background-color: #333;
+        padding: 30px 5px;
+    }
 
     h1 {
         font-size: 100px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
 
@@ -303,49 +324,55 @@ select option{
         padding-left: 50px;
         padding-right: 50px;
 
-    }  
+    }
 
-    .inp 
-    {
+    .inp {
         height: 100px;
-        width: 800px; 
+        width: 800px;
 
     }
-    .inp1 
-    {
+
+    .inp1 {
         height: 110px;
-        width: 845px;  
+        width: 845px;
+        font-size: 35px;
     }
-    .btn
-    {
+
+    .btn {
         height: 110px;
-        width: 845px;  
+        width: 845px;
+        font-size: 40px;
     }
+
     h4 {
         font-size: 50px;
     }
 
+    .inp {
+        font-size: 35px;
+    }
 
 
 }
 
 /*4K*/
-@media only screen and (min-width: 1999px) and (min-height: 2000px)
-{
+@media only screen and (min-width: 1999px) and (min-height: 2000px) {
     .navbar-right {
-   padding: 10px;
-}
+        padding: 10px;
+    }
+
     .navbar a {
-/*        padding-top: 10px;*/
-    font-size: 48px;
-}
+        /*        padding-top: 10px;*/
+        font-size: 48px;
+    }
+
     ::-webkit-input-placeholder {
-        font-size: 40pt; 
+        font-size: 40pt;
     }
 
     h1 {
         font-size: 180px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
 
@@ -354,75 +381,76 @@ select option{
         padding-left: 50px;
         padding-right: 50px;
 
-    }  
-.navbar img {
-    width: 100px;
-    height: 85px;
-}
-    .inp 
-    {
-        height: 100px;
-        width: 1500px; 
     }
-    .inp1 
-    {
+
+    .navbar img {
+        width: 100px;
+        height: 85px;
+    }
+
+    .inp {
+        height: 100px;
+        width: 1500px;
+    }
+
+    .inp1 {
         font-size: 30pt;
         height: 100px;
-        width: 1550px;   
+        width: 1550px;
     }
-    .btn
-    {
+
+    .btn {
         font-size: 60px;
         height: 100px;
         width: 1550px;
     }
+
     h4 {
         font-size: 70px;
     }
 }
 
 
-    /*4K reverse*/
-    @media only screen and (min-width: 1999px) and (min-height: 2500px)
-    {
+/*4K reverse*/
+@media only screen and (min-width: 1999px) and (min-height: 2500px) {
 
-        ::-webkit-input-placeholder {
-            font-size: 50pt; 
-        }
+    ::-webkit-input-placeholder {
+        font-size: 50pt;
+    }
 
-        h1 {
-            font-size: 200px;
-            padding-left: 20px;
-        }
+    h1 {
+        font-size: 200px;
+        padding-left: 0px;
+    }
 
 
-        .pad {
-            font-size: 90px;
-            padding-left: 50px;
-            padding-right: 50px;
-
-        }  
-
-        .inp 
-        {
-            height: 140px;
-            width: 1700px;
-        }
-        .inp1 
-        {
-            font-size: 40pt; 
-            height: 150px;
-            width: 1750px;  
-        }
-        .btn
-        {
-            font-size: 80px;
-            height: 150px;
-            width: 1750px;
-        }
-        h4 {
-            font-size: 90px;
-        }
-
+    .pad {
+        font-size: 90px;
+        padding-left: 50px;
+        padding-right: 50px;
 
     }
+
+    .inp {
+        height: 140px;
+        width: 1700px;
+    }
+
+    .inp1 {
+        font-size: 40pt;
+        height: 150px;
+        width: 1750px;
+    }
+
+    .btn {
+        font-size: 80px;
+        height: 150px;
+        width: 1750px;
+    }
+
+    h4 {
+        font-size: 90px;
+    }
+
+
+}

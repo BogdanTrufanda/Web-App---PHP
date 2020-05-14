@@ -1,12 +1,19 @@
 <?php
+ini_set('session.cache_limiter','public');
+session_cache_limiter(false);
+
   session_start();
 
 if (isset($_SESSION["username"]))
 {
-
-    if(isset($_COOKIE[$_SESSION['topic']]))
-    {require 'limit.php';
-    }
+    
+    if (isset($_SESSION['cokname']))
+    {
+        $name = $_SESSION['cokname'];
+        if(isset($_COOKIE[$name]))
+            {require 'limit.php';
+            }
+            }
     else
     {
     {

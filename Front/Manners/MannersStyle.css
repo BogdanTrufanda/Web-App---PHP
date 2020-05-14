@@ -65,7 +65,7 @@ a {
 
 .navbar {
     background-color: #333;
-    padding: 15px 5px;
+    padding: 20px 10px;
 }
 
 .navbar a {
@@ -130,11 +130,11 @@ input.btn {
     border-image-slice: 1;
     border-width: 4px;
     font-size: 25px;
-    font-family: 'Francois One';
-    text-shadow: 1px 1px white;
-    color: black;
+    font-family: 'Courgette';
+    color: white;
     font-weight: 800;
-    padding: 20px 80px;
+    padding: 20px 0px;
+    width: 250px;
 }
 
 input.btn:hover {

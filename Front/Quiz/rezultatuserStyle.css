@@ -17,6 +17,7 @@ body {
 
 h1 {
     color: #fff;
+    font-size: 45px;
 }
 
 a {
@@ -122,22 +123,33 @@ a {
     font-family: 'Francois One';
 }
 
+
 .btn {
-    height: 55px;
-    width: 150px;
-    font-size: 25px;
+    margin: 0 auto;
+    display: block;
+    height: 60px;
+    width: 250px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-size: 28px;
     font-family: 'Courgette';
-    color: #333;
+    color: #fff;
     font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.5em;
+    text-decoration: none;
 }
+
 
 .btn:hover {
-    background-color: #333;
-    color: #fff;
-    border: none;
+    border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    border-image-slice: 1;
+    border-width: 4px;
     cursor: pointer;
 }
-
 
 /*---------MEDIA--------------*/
 
@@ -156,6 +168,9 @@ a {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 60%;
+    }
+    h1 {
+        font-size: 35px;
     }
 
     .flex-container {

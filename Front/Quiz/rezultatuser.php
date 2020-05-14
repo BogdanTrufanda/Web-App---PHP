@@ -8,20 +8,21 @@ if (isset($_SESSION["username"]))
         $punctaj = 0;
         $correct = $_SESSION["answerstring"];
         $stringuser = $_SESSION['userinput'];
-                echo "<br>";
+//                echo "<br>";
         for ($i = 0; $i <= 14; $i++) {
-            echo intval($stringuser[$i]). " ". intval($correct[$i]). " ";
+//            echo intval($stringuser[$i]). " ". intval($correct[$i]). " ";
             if (intval($stringuser[$i]) == intval($correct[$i]))
                 if (intval($stringuser[$i]) == 1)
-                {echo "Y";
+                {
+//                    echo "Y";
                  $contor ++;
                 }
                 
-            echo "<br>";
+//            echo "<br>";
         }
-        echo "<br>";
-        echo $contor;
-                echo "<br>";
+//        echo "<br>";
+//        echo $contor;
+//                echo "<br>";
         $difficulty = $_SESSION['quizdiff'];
         if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
             $punctaj = 10 * $contor;
@@ -33,7 +34,7 @@ if (isset($_SESSION["username"]))
             $punctaj = 100 * $contor;
         }
         // $punctaj = 10 * $contor;
-        echo "USERUL A OBTINUT ".$punctaj. " PUNCTE!!";
+//        echo "USERUL A OBTINUT ".$punctaj. " PUNCTE!!";
      $name = $_SESSION["username"];
      $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
         if (!$con)
@@ -59,30 +60,33 @@ if (isset($_SESSION["username"]))
     $internet_score = $col['internet_score'];
     $job_score = $col['job_score'];
     }
-          echo "<br>";
-        echo $id;
-        echo $table_score."<br>";
-        echo $bus_score."<br>";
-        echo $church_score."<br>";
-        echo $traffic_score."<br>";
-        echo $internet_score."<br>";
-        echo $job_score."<br>";
+//          echo "<br>";
+//        echo $id;
+//        echo $table_score."<br>";
+//        echo $bus_score."<br>";
+//        echo $church_score."<br>";
+//        echo $traffic_score."<br>";
+//        echo $internet_score."<br>";
+//        echo $job_score."<br>";
     }
      
      $topic = $_SESSION['quiz'];
-     $cookiename = $_SESSION["topic"];
+     $cookiename = $_SESSION["topic"] . $name;
      $sql = "update scores SET $topic = $topic + '$punctaj'  where user_id = '$id'";
      $interogare = mysqli_query($con,$sql);
-         echo "<br>";
-     
-     
-         echo "<br>";
+     $_SESSION['cokname'] = $cookiename;
+//         echo "<br>";
+//     
+//     
+//         echo "<br>";
             if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
             if(!isset($_COOKIE[$cookiename])) 
             {
             setcookie($cookiename, 1, time() + (900), "/"); 
             }
             }
+        $_SESSION['puncte'] = $punctaj;
+        require "Rezultatuser.html";
         unset($_SESSION["answerstring"]);
         unset($_SESSION["userinput"]);
         mysqli_close($con);

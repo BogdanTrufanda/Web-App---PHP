@@ -3,7 +3,9 @@
 session_start(); 
 
 if (isset($_SESSION["username"]))
-{session_unset(); 
+{
+    $_SESSION = array();
+    session_destroy();
 }
 
 

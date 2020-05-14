@@ -145,26 +145,33 @@ form.user-btn-container{
     justify-content: center;
     margin-top: 3.5rem;
 }
-input.user-btn{
-        height: 3rem;
-        background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-        border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-        border-image-slice: 1;
-        border-width: 4px; 
-        font-family: 'Francois One';
-        text-shadow: 1px 1px #FFF;
-        font-weight: 200;
-        font-size: 1.5rem;
-    }
+input.user-btn {
+    height: 75px;
+    width: 250px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-family: 'Courgette';
+    color: #fff;
+    font-weight: 200;
+    font-size: 35px;
+    margin-bottom: 1em;
+}
+
     input.user-btn:focus{
         border-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         background-image: linear-gradient(to right, #feb377 0%, #feb377 100%);
         border-image-slice: 1;
         border-width: 4px;
     }
-    input.user-btn:hover{
-        cursor: pointer;
-    }
+    input.user-btn:hover {
+    cursor: pointer;
+    border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+}
 
 /*-------------------------------------*/
 /*Responsive Web Design*/

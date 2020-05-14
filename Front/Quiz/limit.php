@@ -1,8 +1,15 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>15 minute nu ai voie sa faci quizuri de lvl 1</p>
-
-</body>
-</html>
+<?php
+ if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+if (isset($_SESSION["username"]))
+{
+    require 'Limit.html';
+}
+else
+{    
+    header("Location: ../Login/Login.php");
+    exit;
+}
+?>

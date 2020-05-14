@@ -33,6 +33,12 @@ p {
     color: #ffa41b;
 }
 
+.err {
+    color: red;
+    font-family: 'Francois One';
+    font-size:25px;
+}
+
 /*-------------------------------------*/
 /*Navbar*/
 /*-------------------------------------*/
@@ -101,6 +107,7 @@ section {
     background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
     border-image-slice: 1;
     border-width: 4px;
+    cursor: pointer;
 }
 
 
