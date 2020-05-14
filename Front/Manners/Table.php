@@ -28,7 +28,7 @@ if (isset($_SESSION["username"]))
         }
     }
         $_SESSION["manners"] = $lines;
-        $_SESSION["topic"] = "Job";
+        $_SESSION["topic"] = "Table";
         $_SESSION["quiz"] = "table_score";
         if(isset($_POST["quizdiff"])){
 
