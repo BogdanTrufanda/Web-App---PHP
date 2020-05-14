@@ -29,6 +29,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
+
 }
 
 .navbar img {
@@ -39,6 +40,11 @@ body {
 .navbar a:hover {
     border-bottom: 2px solid #ffa41b;
 
+}
+
+.navbar a.active {
+    background-color: #ffa41b;
+    color: white;
 }
 
 .navbar-right {
@@ -260,7 +266,13 @@ select option {
 /*FULL HD land*/
 @media only screen and (min-width: 1700px) {
     .navbar a {
-        font-size: 38px;
+            float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
     }
 
     h1 {

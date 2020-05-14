@@ -18,13 +18,20 @@ if (isset($_SESSION["username"]))
         }
         $difficulty = $_SESSION['quizdiff'];
         if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
-            $punctaj = 10 * $contor;
+            {
+                $_SESSION["punctetotal"] = 50;
+                $punctaj = 10 * $contor;
+            }
         }
         if(strcmp($difficulty, 'Quiz Lvl 2') == 0){
-            $punctaj = 50 * $contor;
+            {$punctaj = 50 * $contor;
+                        $_SESSION["punctetotal"] = 250;
+            }
         }
         if(strcmp($difficulty, 'Quiz Lvl 3') == 0){
-            $punctaj = 100 * $contor;
+            {$punctaj = 100 * $contor;
+                        $_SESSION["punctetotal"] = 500;
+            }
         }
      $name = $_SESSION["username"];
      $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
