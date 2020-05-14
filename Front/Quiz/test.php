@@ -3,17 +3,20 @@ ini_set('session.cache_limiter','public');
 session_cache_limiter(false);
 
   session_start();
-
+ 
 if (isset($_SESSION["username"]))
 {
-    
-    if (isset($_SESSION['cokname']))
+    $topic = $_SESSION["topic"];
+    $name = $_SESSION["username"];
+     $tmp = $topic . $name;
+    if(strcmp($_SESSION['quizdiff'], 'Quiz Lvl 1') == 0)
     {
-        $name = $_SESSION['cokname'];
-        if(isset($_COOKIE[$name]))
-            {require 'limit.php';
-            }
-            }
+        $difficulty = 1;
+        $tmp = $topic . $name . $difficulty;
+    }
+    if(isset($_COOKIE[$tmp]))
+        {require 'limit.php';
+        }
     else
     {
     {

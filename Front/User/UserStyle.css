@@ -146,8 +146,8 @@ form.user-btn-container{
     margin-top: 3.5rem;
 }
 input.user-btn {
-    height: 75px;
-    width: 250px;
+    height: 60px;
+    width: 200px;
     background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
     border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
     border-image-slice: 1;
@@ -155,7 +155,7 @@ input.user-btn {
     font-family: 'Courgette';
     color: #fff;
     font-weight: 200;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 1em;
 }
 
@@ -180,6 +180,20 @@ input.user-btn {
 /*MOBILE*/
 
 @media screen and (min-width: 300px) and (max-width: 765px) {
+    input.user-btn {
+    height: 45px;
+    width: 165px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-family: 'Courgette';
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+    
     div.user-pic{
         max-width: 70%;
         margin-top: 10%;
@@ -215,7 +229,7 @@ input.user-btn {
         flex-wrap: wrap;
     }
     div.user-info-specific{
-        min-width: 100%;
+        min-width: 76%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -223,7 +237,7 @@ input.user-btn {
     span.info-category{
         display: block;
         min-width: 50%;
-        font-size: 3.5vw;
+        font-size: 5.3vw;
         color: gray;
         text-align: end;
         text-shadow: 1px 1px black;
@@ -234,7 +248,7 @@ input.user-btn {
         color: white;
         text-shadow: 1px 1px black;
         margin-left: 1rem;
-        font-size: 3.5vw;
+        font-size: 5.3vw;
     }
     div.user-score{
         display: flex;
@@ -252,8 +266,8 @@ input.user-btn {
     span.category{
         margin-left: 20%;
         display: block;
-        width: 40%;
-        font-size: 3.5vw;
+        width: 50%;
+        font-size: 5.3vw;
         font-family: 'Francois One';
         color: gray;
         text-align: start;
@@ -266,16 +280,36 @@ input.user-btn {
         color: white;
         text-shadow: 1px 1px black;
         margin-left: 0.5rem;
-        font-size: 3.5vw;
+        font-size: 5.3vw;
     }
     div.user-pic{
-        max-width: 80%;
+        max-width: 50%;
     }
     img.pic{
         max-width: 400px;
         width: 100%;
         height: auto;
     }
+    
+    .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 25px;
+}
+    
+    form.user-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+        margin-top: 0px;
+    margin-bottom: 1.3rem; 
+}
     
 }
 
@@ -297,7 +331,7 @@ input.user-btn {
     div.user-pic{
         margin-top: 5%;
         max-width: 50%;
-        margin-left: 3%;
+        margin-left: 20%;
     }
     img.pic{
         display: block;
@@ -311,10 +345,10 @@ input.user-btn {
         display: flex;
         margin-left: 3%;
         max-width: 40%;
-        margin-top: 5%;
+        margin-top: 50px;
         justify-content: flex-start;
         flex-wrap: wrap;
-        padding-top: 2%;
+        
         /*padding-bottom: 15%;*/
     }
     div.user-name{
@@ -324,7 +358,7 @@ input.user-btn {
         align-items: center;
     }
     span.name{
-        font-size: 4.5vw;
+        font-size: 3.5vw;
         text-shadow: 1px 1px black;
         text-decoration: underline white;
         text-align: center;
@@ -361,7 +395,7 @@ input.user-btn {
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 0.5rem;
-        margin-bottom: 2rem;
+        
     }
     div.score-category{
         width: 50%;
@@ -371,7 +405,7 @@ input.user-btn {
     span.category{
         display: block;
         width: 50%;
-        font-size: 2.5vw;
+        font-size: 2vw;
         font-family: 'Francois One';
         color: gray;
         text-align: start;

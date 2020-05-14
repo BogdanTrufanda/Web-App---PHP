@@ -361,12 +361,16 @@ input.form-print {
         position: relative;
         bottom: -0.1rem;
         left: 1rem;
-        font-size: 2rem;
-
+        font-size: 1.5rem;
     }
 
     input[type=radio] {
         transform: scale(1.8);
+    }
+    
+    .form-answer{
+        padding-right: 10px;
+        padding-right: 30px;
     }
 
     button.form-btn {
