@@ -53,7 +53,7 @@ if (strcmp($parola,$pass) != 0)
 else
 {
         $_SESSION["username"] = $name;
-      header("Location: ../Recommendation/Recommendation.html");
+      header("Location: ../Recommendation/Recommendation.php");
       exit;
 }
 

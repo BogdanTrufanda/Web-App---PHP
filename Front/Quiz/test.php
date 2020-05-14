@@ -3,9 +3,15 @@
 
 if (isset($_SESSION["username"]))
 {
-    if (!isset($_SESSION["answerstring"]))
+
+    if(isset($_COOKIE[$_SESSION['topic']]))
+    {require 'limit.php';
+    }
+    else
     {
-        
+    {
+    if (!isset($_SESSION["answerstring"]))
+    {        
     $name = $_SESSION["username"];
     $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
     if (!$con)
@@ -96,6 +102,8 @@ if (isset($_SESSION["username"]))
             die;
         }
     }
+    }
+}
 }
 
 else

@@ -61,20 +61,28 @@ if (isset($_SESSION["username"]))
     }
           echo "<br>";
         echo $id;
-            echo $table_score."<br>";
+        echo $table_score."<br>";
         echo $bus_score."<br>";
         echo $church_score."<br>";
         echo $traffic_score."<br>";
         echo $internet_score."<br>";
         echo $job_score."<br>";
     }
-        
-     // aici e hardcodat cu internet_score pt ca inca nu e facut conexiunea intre recomandari si quizuri
-     $sql = "update scores SET internet_score = internet_score + '$punctaj'  where user_id = '$id'";
+     
+     $topic = $_SESSION['quiz'];
+     $cookiename = $_SESSION["topic"];
+     $sql = "update scores SET $topic = $topic + '$punctaj'  where user_id = '$id'";
      $interogare = mysqli_query($con,$sql);
+         echo "<br>";
      
      
-     
+         echo "<br>";
+            if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
+            if(!isset($_COOKIE[$cookiename])) 
+            {
+            setcookie($cookiename, 1, time() + (900), "/"); 
+            }
+            }
         unset($_SESSION["answerstring"]);
         unset($_SESSION["userinput"]);
         mysqli_close($con);
