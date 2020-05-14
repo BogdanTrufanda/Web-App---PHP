@@ -28,7 +28,15 @@ if (isset($_SESSION["username"]))
         }
     }
         $_SESSION["manners"] = $lines;
-        require "Church.html";
+        $_SESSION["topic"] = "Church";
+        $_SESSION["quiz"] = "church_score";
+        if(isset($_POST["quizdiff"])){
+
+            $difficulty = $_POST["quizdiff"];
+            $_SESSION["quizdiff"] = $difficulty;
+            header("Location: ../Quiz/test.php");
+        }
+        require "Manners.html";
 }
 else
 {    

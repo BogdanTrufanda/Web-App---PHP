@@ -21,7 +21,17 @@ if (isset($_SESSION["username"]))
         while ($col = $interogare->fetch_assoc()){
             $region = $col['continent'];
             $status = $col['status'];
-            $file = "./Quizuri1/Traffic/".$region.".txt";
+            $difficulty = $_SESSION['quizdiff'];
+            //echo $difficulty;
+            if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
+                $file = "./Quizuri1/".$_SESSION['topic']."/".$region.".txt";
+            }
+            if(strcmp($difficulty, 'Quiz Lvl 2') == 0){
+                $file = "./Quizuri2/".$_SESSION['topic']."/".$region.".txt";
+            }
+            if(strcmp($difficulty, 'Quiz Lvl 3') == 0){
+                $file = "./Quizuri3/".$_SESSION['topic']."/".$region.".txt";
+            }
             $document = file_get_contents($file);
             $lines = explode("\n", $document);            
         }

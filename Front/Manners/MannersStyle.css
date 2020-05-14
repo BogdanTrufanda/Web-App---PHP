@@ -124,23 +124,25 @@ section {
     padding-bottom: 40px;
 }
 
-.btn {
+input.btn {
     background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
     border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
     border-image-slice: 1;
     border-width: 4px;
     font-size: 25px;
-    font-family: 'Courgette';
-    color: #fff;
+    font-family: 'Francois One';
+    text-shadow: 1px 1px white;
+    color: black;
     font-weight: 800;
     padding: 20px 80px;
 }
 
-.btn:hover {
+input.btn:hover {
     border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
     background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
     border-image-slice: 1;
     border-width: 4px;
+    cursor: pointer;
 }
 
 /*---------MEDIA--------------*/

@@ -3,7 +3,7 @@
 
 if (isset($_SESSION["username"]))
 {
-    $name = $_SESSION["username"];
+	$name = $_SESSION["username"];
     $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
     if (!$con)
         die(mysqli_connect_error());
@@ -22,13 +22,22 @@ if (isset($_SESSION["username"]))
             $user = $col['username'];
             $region = $col['continent'];
             $status = $col['status'];
-            $file = "./InternetManners/".$region.".txt";
+            $file = "./BusManners/".$region.".txt";
             $document = file_get_contents($file);
             $lines = explode("\n", $document);            
         }
     }
         $_SESSION["manners"] = $lines;
-        require "Internet.html";
+        $_SESSION["topic"] = "Bus";
+        $_SESSION["quiz"] = "bus_score";
+        if(isset($_POST["quizdiff"])){
+
+            $difficulty = $_POST["quizdiff"];
+            $_SESSION["quizdiff"] = $difficulty;
+            header("Location: ../Quiz/test.php");
+        }
+        //echo $_POST["quizdiff"];
+        require "Manners.html";
 }
 else
 {    

@@ -22,7 +22,17 @@ if (isset($_SESSION["username"]))
         echo "<br>";
         echo $contor;
                 echo "<br>";
-        $punctaj = 10 * $contor;
+        $difficulty = $_SESSION['quizdiff'];
+        if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
+            $punctaj = 10 * $contor;
+        }
+        if(strcmp($difficulty, 'Quiz Lvl 2') == 0){
+            $punctaj = 50 * $contor;
+        }
+        if(strcmp($difficulty, 'Quiz Lvl 3') == 0){
+            $punctaj = 100 * $contor;
+        }
+        // $punctaj = 10 * $contor;
         echo "USERUL A OBTINUT ".$punctaj. " PUNCTE!!";
      $name = $_SESSION["username"];
      $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');

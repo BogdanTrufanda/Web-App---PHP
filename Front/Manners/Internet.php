@@ -22,13 +22,21 @@ if (isset($_SESSION["username"]))
             $user = $col['username'];
             $region = $col['continent'];
             $status = $col['status'];
-            $file = "./JobManners/".$region.".txt";
+            $file = "./InternetManners/".$region.".txt";
             $document = file_get_contents($file);
             $lines = explode("\n", $document);            
         }
     }
         $_SESSION["manners"] = $lines;
-        require "Job.html";
+        $_SESSION["topic"] = "Internet";
+        $_SESSION["quiz"] = "internet_score";
+        if(isset($_POST["quizdiff"])){
+
+            $difficulty = $_POST["quizdiff"];
+            $_SESSION["quizdiff"] = $difficulty;
+            header("Location: ../Quiz/test.php");
+        }
+        require "Manners.html";
 }
 else
 {    
