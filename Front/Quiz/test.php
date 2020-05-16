@@ -6,9 +6,11 @@ session_start();
 
 if (isset($_SESSION["username"]))
 {
+
     $topic = $_SESSION["topic"];
     $name = $_SESSION["username"];
     $tmp = $topic . $name;
+
     if(strcmp($_SESSION['quizdiff'], 'Quiz Lvl 1') == 0)
     {
         $difficulty = 1;
@@ -24,35 +26,21 @@ if (isset($_SESSION["username"]))
             if (!isset($_SESSION["answerstring"]))
             {        
                 $name = $_SESSION["username"];
-                $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
-                if (!$con)
-                    die(mysqli_connect_error());
 
-                $sql = "SELECT continent, status FROM users WHERE username = '$name'";
-                $interogare = mysqli_query($con,$sql);
-
-
-                $row_cnt = mysqli_num_rows($interogare);
-                if ($row_cnt)
-                {
-
-                    while ($col = $interogare->fetch_assoc()){
-                        $region = $col['continent'];
-                        $status = $col['status'];
-                        $difficulty = $_SESSION['quizdiff'];
-                        if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
-                            $file = "./Quizuri1/".$_SESSION['topic']."/".$region.".txt";
-                        }
-                        if(strcmp($difficulty, 'Quiz Lvl 2') == 0){
-                            $file = "./Quizuri2/".$_SESSION['topic']."/".$region.".txt";
-                        }
-                        if(strcmp($difficulty, 'Quiz Lvl 3') == 0){
-                            $file = "./Quizuri3/".$_SESSION['topic']."/".$region.".txt";
-                        }
-                        $document = file_get_contents($file);
-                        $lines = explode("\n", $document);            
-                    }
+                $region = $_SESSION['regiune'];
+                $status = $_SESSION['status'];
+                $difficulty = $_SESSION['quizdiff'];
+                if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
+                    $file = "./Quizuri1/".$_SESSION['topic']."/".$region.".txt";
                 }
+                if(strcmp($difficulty, 'Quiz Lvl 2') == 0){
+                    $file = "./Quizuri2/".$_SESSION['topic']."/".$region.".txt";
+                }
+                if(strcmp($difficulty, 'Quiz Lvl 3') == 0){
+                    $file = "./Quizuri3/".$_SESSION['topic']."/".$region.".txt";
+                }
+                $document = file_get_contents($file);
+                $lines = explode("\n", $document);            
 
                 $question_lines = array();
                 for($i = 0; $i <= 38; $i = $i+5)
@@ -62,7 +50,7 @@ if (isset($_SESSION["username"]))
                 shuffle($question_lines);
                 $selected_questions_indexes = array_rand(array_flip($question_lines), 5);
                 $questions_and_answers = array();
-                
+
                 foreach ($selected_questions_indexes as $index)
                 {
                     $array_to_shuffle = array($lines[$index+1], $lines[$index+2], $lines[$index+3]);

@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title><?php echo $_SESSION["username"]." - Preferences"; ?></title>
+        <title><?php echo $_SESSION['username']." - Preferences"; ?></title>
         <link rel="icon" href="../Resources/logo.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="preferencesStyle.css">
         <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
@@ -36,8 +36,8 @@
             ?>
 
             <form method="post">
-                <input class="inp" type="password" name="uname" placeholder="Enter the new Password" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits and max 16"><br><br>
-                <input class="inp" type="password" name="unames" placeholder="Enter the new Password Again" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits and max 16"><br><br>
+                <input class="inp" type="password" name="uname" placeholder="Enter the new Password" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits"><br><br>
+                <input class="inp" type="password" name="unames" placeholder="Enter the new Password Again" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits"><br><br>
                 <select class="inp1" name="continent">
                     <option value="Asia">Asia</option>
                     <option value="America">America</option>
@@ -49,7 +49,8 @@
                     <option value="Manager">Manager</option>
                     <option value="Employee">Employee</option>
                     <option value="Unemployed">Unemployed</option>
-                </select><br><br>   
+                </select><br><br>
+
                 <button class="btn" name ="buton">Submit</button>
             </form>
 

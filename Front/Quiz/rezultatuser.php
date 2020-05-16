@@ -35,37 +35,35 @@ if (isset($_SESSION["username"]))
             }
         }
         $name = $_SESSION["username"];
-        $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
-        if (!$con)
-            die(mysqli_connect_error());
-
-
-
-        $sql = "SELECT user_id, table_score, bus_score, church_score, traffic_score, internet_score, job_score 
-            FROM users 
-            JOIN scores
-            ON users.id = scores.user_id WHERE username = '$name'";
-        $interogare = mysqli_query($con,$sql);
-        $row_cnt = mysqli_num_rows($interogare);
-        if ($row_cnt) 
+        
+        $con = new mysqli('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
+        if ($con -> connect_errno) 
         {
-            while ($col = $interogare->fetch_assoc())
-            {
-                $id = $col['user_id'];
-                $table_score = $col['table_score'];
-                $bus_score = $col['bus_score'];
-                $church_score = $col['church_score'];
-                $traffic_score = $col['traffic_score'];
-                $internet_score = $col['internet_score'];
-                $job_score = $col['job_score'];
-            }
+            echo "Failed to connect to MySQL: " . $con -> connect_error;
+            exit();
         }
 
+        $stmt = $con->prepare('SELECT id from users WHERE username = ?');
+        $stmt->bind_param('s', $name); 
+
+        $stmt->execute();
+        $result = $stmt->get_result();
+        while ($col = $result->fetch_assoc())
+        {
+            $id = $col['id'];
+
+        }
         $topic = $_SESSION['quiz'];
-        $sql = "update scores SET $topic = $topic + '$punctaj'  where user_id = '$id'";
-        $interogare = mysqli_query($con,$sql);
-        $cookic = $_SESSION["topic"];
-        $cookiename = $cookic . $name; 
+
+
+        $stmt = $con->prepare("update scores SET $topic = $topic + '$punctaj' where user_id = ?");
+        $stmt->bind_param('s', $id); 
+
+        $stmt->execute();
+
+        $cookie_topic = $_SESSION["topic"];
+        $cookiename = $cookie_topic . $name; 
+
         if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
             if(!isset($_COOKIE[$cookiename])) 
             {

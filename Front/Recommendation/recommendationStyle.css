@@ -30,6 +30,11 @@ a {
     text-decoration: none;
 }
 
+section
+{
+    text-align: center;
+}
+
 
 /*-------------------------------------*/
 /*Navbar*/

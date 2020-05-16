@@ -19,29 +19,39 @@ if (isset($_POST['buton']))
     $pass = sha1($password.$salt); 
 
 
-    $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
-    if (!$con)
-        die(mysqli_connect_error());
+    $con = new mysqli('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
+    if ($mysqli -> connect_errno) 
+    {
+        echo "Failed to connect to MySQL: " . $con -> connect_error;
+        exit();
+    }
 
-    $sql = "SELECT username FROM users WHERE username = '$name'";
-    $interogare = mysqli_query($con,$sql);
 
-    if($interogare->num_rows == 0)
+    $stmt = $con->prepare('SELECT username FROM users WHERE username = ?');
+    $stmt->bind_param('s', $name); 
+
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+
+    if($result->num_rows == 0)
     {
         $_SESSION['errorlogin'] = 1;
         exit(header('Location: '.$_SERVER['PHP_SELF']));
     }
     else
     {
-        $sql = "SELECT password FROM users WHERE username = '$name'";
-        $interogare = mysqli_query($con,$sql);  
+        $stmt = $con->prepare('SELECT password FROM users WHERE username = ?');
+        $stmt->bind_param('s', $name);
 
+        $stmt->execute();
 
+        $result = $stmt->get_result();
 
-        if (mysqli_num_rows($interogare) > 0) 
+        if (mysqli_num_rows($result) > 0) 
         {
-            while($row = mysqli_fetch_assoc($interogare))
-            {
+
+            while ($row = $result->fetch_assoc()) {
                 $parola = $row["password"];
             }
         }   

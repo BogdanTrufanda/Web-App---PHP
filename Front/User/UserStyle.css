@@ -177,14 +177,15 @@ input.user-btn:hover {
         text-align: center;
     }
     div.user-info{
-        max-width: 80%;
+        max-width: 85%;
         font-family: 'Francois One';
         display: flex;
+        font-size: 5px;
         justify-content: center;
         flex-wrap: wrap;
     }
     div.user-info-specific{
-        min-width: 76%;
+        min-width: 85%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -192,7 +193,7 @@ input.user-btn:hover {
     span.info-category{
         display: block;
         min-width: 50%;
-        font-size: 5.3vw;
+        font-size: 20px;
         color: gray;
         text-align: end;
         text-shadow: 1px 1px black;
@@ -202,8 +203,8 @@ input.user-btn:hover {
         font-family: 'Courgette';
         color: white;
         text-shadow: 1px 1px black;
-        margin-left: 5px;
-        font-size: 5.3vw;
+        margin-left: 1rem;
+        font-size: 20px;
     }
     div.user-score{
         display: flex;
@@ -222,7 +223,7 @@ input.user-btn:hover {
         margin-left: 20%;
         display: block;
         width: 50%;
-        font-size: 5.3vw;
+        font-size: 20px;
         font-family: 'Francois One';
         color: gray;
         text-align: start;
@@ -235,7 +236,7 @@ input.user-btn:hover {
         color: white;
         text-shadow: 1px 1px black;
         margin-left: 0.5rem;
-        font-size: 5.3vw;
+        font-size: 20px;
     }
     div.user-pic{
         max-width: 50%;
@@ -288,7 +289,7 @@ input.user-btn:hover {
     div.user-pic{
         margin-top: 5%;
         max-width: 50%;
-        margin-left: 20%;
+        margin-left: 15%;
     }
     img.pic{
         display: block;
@@ -315,7 +316,7 @@ input.user-btn:hover {
         align-items: center;
     }
     span.name{
-        font-size: 3.5vw;
+        font-size: 40px;
         text-shadow: 1px 1px black;
         text-decoration: underline white;
         text-align: center;
@@ -334,10 +335,10 @@ input.user-btn:hover {
     span.info-category{
         display: block;
         min-width: 45%;
-        font-size: 2vw;
+        font-size: 25px;
         color: gray;
         text-align: start;
-        
+/*        text-shadow: 1px 1px back;*/
     }
     span.info{
         margin-left: 0.5rem;
@@ -346,7 +347,7 @@ input.user-btn:hover {
         color: white;
         text-shadow: 1px 1px black;
         margin-left: 0.5rem;
-        font-size: 2vw;
+        font-size: 25px;
     }div.user-score{
         display: flex;
         justify-content: space-between;
@@ -362,7 +363,7 @@ input.user-btn:hover {
     span.category{
         display: block;
         width: 50%;
-        font-size: 2vw;
+        font-size: 25px;
         font-family: 'Francois One';
         color: gray;
         text-align: start;
@@ -375,37 +376,12 @@ input.user-btn:hover {
         color: white;
         text-shadow: 1px 1px black;
         margin-left: 0.5rem;
-        font-size: 2.5vw;
+        font-size: 25px;
     }
 
 }
 
-@media only screen and (min-width: 700px) and (max-width: 800px) {
-    
-    main {
-        display: block;
-    }
-    
-   div.user-info {
-    display: flex;
-    margin-left: 3%;
-    max-width: 40%;
-    margin-top: 50px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    /* padding-bottom: 15%; */
-    margin: auto;
-    padding-top: 60px;
-}
-    div.user-pic {
-    margin-top: 5%;
-    max-width: 42%;
-    margin-left: 0%;
-    padding-top: 60px;
-    margin: auto;
-}
-    
-}
+
 
 /*FULL HD land*/
 @media only screen and (min-width: 1700px){
@@ -437,7 +413,7 @@ input.user-btn:hover {
         display: flex;
         margin-left: 3%;
         max-width: 40%;
-        margin-top: 5%;
+        margin-top: 2.5%;
         justify-content: flex-start;
         flex-wrap: wrap;
         padding-top: 2%;
@@ -472,7 +448,7 @@ input.user-btn:hover {
         font-size: 2vw;
         color: gray;
         text-align: start;
-        
+/*        text-shadow: 1px 1px back;*/
     }
     span.info{
         margin-left: 0.5rem;

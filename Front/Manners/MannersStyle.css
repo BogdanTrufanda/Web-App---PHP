@@ -119,6 +119,9 @@ input.btn {
     font-weight: 800;
     padding: 20px 0px;
     width: 250px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 input.btn:hover {
@@ -157,34 +160,7 @@ input.btn:hover {
         padding-left: 50px;
         padding-right: 50px;
     }
-
-    .navbar a {
-        float: left;
-        color: white;
-        text-align: center;
-        padding: 10px 4px;
-        text-decoration: none;
-        font-size: 12px;
-        line-height: 25px;
-    }
-    
-    input.btn {
-    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-    border-image-slice: 1;
-    border-width: 4px;
-    font-size: 20px;
-    font-family: 'Courgette';
-    color: white;
-    font-weight: 800;
-    padding: 20px 0px;
-    width: 220px;
-    height: 70px;
 }
- 
-}
-
-
 
 @media only screen and (min-width: 451px) and (max-width: 699px) {
 
@@ -198,7 +174,7 @@ input.btn:hover {
     }
 
 
-    .btn {
+    input.btn {
         padding: 10px 15px;
         display: block;
         width: 50%;
@@ -228,24 +204,10 @@ input.btn:hover {
         text-align: left;
         line-height: 33px;
     }
-
     .pad {
         padding-left: 80px;
         padding-right: 80px;
     }
-    
-    input.btn {
-    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
-    border-image-slice: 1;
-    border-width: 4px;
-    font-size: 25px;
-    font-family: 'Courgette';
-    color: white;
-    font-weight: 800;
-    padding: 20px 0px;
-    width: 180px;
-}
 
 }
 
@@ -261,8 +223,9 @@ input.btn:hover {
     }
 
 
-    .btn {
-        padding: 15px 40px;
+    input.btn {
+        padding: 15px 0px;
+        width: 350px;
     }
 
     .pad {
@@ -283,8 +246,9 @@ input.btn:hover {
         line-height: 45px;
     }
 
-    .btn {
-        padding: 20px 60px;
+    input.btn {
+        padding: 20px 0px;
+        width: 200px;
     }
 
     .pad {
@@ -306,12 +270,5 @@ input.btn:hover {
     .navbar img {
         width: 100px;
         height: 60px;
-    }
-}
-
-@media only screen and (min-width: 1700px) {
-    .pad {
-        padding-left: 475px;
-        padding-right: 475px;
     }
 }

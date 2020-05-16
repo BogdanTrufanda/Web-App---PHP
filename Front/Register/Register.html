@@ -32,8 +32,10 @@ $_SESSION["errorregister"] = 0;
             <p class="pad">Welcome! Please register so you can get access to your personal Good Manners Recommender!</p>
             <form method="POST">
                 <input class="inp" type="text" name="uname" placeholder="Enter Username" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits and max 16" required><br><br>
-                <input class="inp" type="password" name="password" id="myInput" placeholder="Enter Password" pattern="[A-Za-z0-9]{8,16}"  title="You need at least 8 characters, only letters and digits and max 16" required><br><br>
-                <input type="checkbox" onclick="myFunction()">
+                <input class="inp" type="password" name="password" id="myInput" placeholder="Enter Password" pattern="[A-Za-z0-9]{8,16}" title="You need at least 8 characters, only letters and digits and max 16" required><br><br>
+                <input class="a b" type="checkbox" onclick="myFunction()">
+                <p class="a">(Show password characters)</p>
+                <br><br>
                 <script src="passwordenabler.js"></script>
                 <select class="inp1" name="continent">
                     <option value="Asia">Asia</option>

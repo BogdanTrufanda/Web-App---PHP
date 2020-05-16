@@ -94,7 +94,7 @@ body {
 }
 
 .box {
-    flex: 1 0 500px;
+    flex: 1 0 450px;
 }
 
 li {
@@ -215,11 +215,12 @@ ol {
     }
 
     li {
-        font-size: 15px;
+        margin-bottom: 30px;
+        font-size: 20px;
     }
 
-    .box > * {
-        text-align: center;
+  .box {
+        flex: 1 0 500px;
     }
 
     .button {

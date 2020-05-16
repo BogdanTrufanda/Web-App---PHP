@@ -22,59 +22,72 @@ if (isset($_SESSION["username"]))
         else
             $passs = '';
 
-
-        $con = mysqli_connect('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
-        if (!$con)
-            die(mysqli_connect_error());
-
+        $con = new mysqli('eu-cdbr-west-03.cleardb.net','bb3b9afcbd4373','baf1fc8d','heroku_dd67cd94965d526');
+        if ($con -> connect_errno) 
+        {
+            echo "Failed to connect to MySQL: " . $con -> connect_error;
+            exit();
+        }
+        echo 123333333333333333333;
         if ($continent != '')
         {
-            $sql = "update users SET Continent = '$continent' where username = '$name'";
-            $interogare = mysqli_query($con,$sql);
+            $_SESSION['regiune'] = $continent; 
+            $stmt = $con->prepare("update users SET continent = '$continent' where username = ?");
+            $stmt->bind_param('s', $name); 
+            $stmt->execute();
+            $result = $stmt->get_result();
         }
+
         if ($status != '')
         {
-            $sql = "update users SET Status = '$status' where username = '$name'";
-            $interogare = mysqli_query($con,$sql);
+            $_SESSION['status'] = $status;
+            $stmt = $con->prepare("update users SET status = '$status' where username = ?");
+            $stmt->bind_param('s', $name); 
+            $stmt->execute();
+            $result = $stmt->get_result();
         }
-        if ($pass != '')
-        {    
-            if ($passs != '')
-            {
-                if (strcmp($pass,$passs) == 0)
-                {
+        echo 2222222222222222222222222222; 
 
-                    $sql = "SELECT password FROM users WHERE username = '$name'";
-                    $interogare = mysqli_query($con,$sql);  
-
-                    if (mysqli_num_rows($interogare) > 0) 
+                if ($pass != '')
+                {    
+                    if ($passs != '')
                     {
-                        while($row = mysqli_fetch_assoc($interogare))
+                        if (strcmp($pass,$passs) == 0)
                         {
-                            $parolapref = $row["password"];
+                            $stmt = $con->prepare('SELECT password FROM users WHERE username = ?');
+                            $stmt->bind_param('s', $name); 
+        
+                            $stmt->execute();
+                            $result = $stmt->get_result();
+                            while ($col = $result->fetch_assoc())
+                            {
+                                $parolapref = $row["password"];
+                                echo $parolapref;
+        
+                            }
+                            if (strcmp($parolapref,$pass) == 0)
+                            {
+                                $_SESSION['preferror'] = 1;
+                                exit(header('Location: '.$_SERVER['PHP_SELF']));
+                            }
+                            else
+                            {
+        
+                                $stmt = $con->prepare("update users SET password = '$pass' where username = ?");
+                                $stmt->bind_param('s', $name); 
+                                $stmt->execute();
+                                $result = $stmt->get_result();
+                                mysqli_close($con);
+                            }
                         }
-                    }   
-                    if (strcmp($parolapref,$pass) == 0)
-                    {
-                        $_SESSION['preferror'] = 1;
-                        exit(header('Location: '.$_SERVER['PHP_SELF']));
+                        else
+                        {
+                            $_SESSION['preferror'] = 1;
+                            exit(header('Location: '.$_SERVER['PHP_SELF']));
+                        }
                     }
-                    else
-                    {
-                        $sql = "update users SET Password = '$pass' where username = '$name'";
-                        $interogare = mysqli_query($con,$sql);
-                        mysqli_close($con);
-                    }
-
                 }
-                else
-                {
-                    $_SESSION['preferror'] = 1;
-                    exit(header('Location: '.$_SERVER['PHP_SELF']));
-                }
-            }
-        }
-        exit(header("Location: ../User/User.php"));
+                        exit(header("Location: ../User/User.php"));
     }
 }
 else
