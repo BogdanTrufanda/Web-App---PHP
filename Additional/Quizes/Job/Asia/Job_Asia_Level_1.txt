@@ -1,0 +1,39 @@
+1 Avoid pointing with your index finer; use _____.
+11 1 an open palm
+12 0 a clenched fist
+13 0 the pinky finger
+
+2 Avoid using _____.
+21 1 large hand movements
+22 0 small hand movements
+23 0 unnecessary amounts of words
+
+3 When shaking hands you should always use _____.
+31 1 your right hand
+32 0 your left hand
+33 0 never shake hands, always bow
+
+4 While accepting business cards, receive it _____.
+41 1 with both hands
+42 0 with caution
+43 0 with the right hand
+
+5 It's customary to _____ when greeting people.
+51 1 bow
+52 0 shake hands
+53 0 wave
+
+6 If you receive a gift do not be _____ to open it.
+61 1 in a hurry
+62 0 lazy
+63 0 hesitant
+
+7 When dining it's best to _____.
+71 1 follow your host
+72 0 adventure on your own
+73 0 be indifferent
+
+8 While out in restaurants _____.
+81 1 never pour your own drink
+82 0 pour your own drink
+83 0 snap your fingers

@@ -1,0 +1,39 @@
+1 Respect other people's _____. 
+11 1 opinion
+12 0 hairstyle
+13 0 handwriting
+
+2 Never post a picture of someone else without _____. 
+21 1 permission
+22 0 editing it
+23 0 tagging them
+
+3 Treat others as you would like to be _____. 
+31 1 treated
+32 0 made fun of
+33 0 ignored
+
+4 Don’t make _____ of someone in an online chat.
+41 1 fun 
+42 0 jokes
+43 0 ironies
+
+5 Verify _____ before reposting. 
+51 1 facts 
+52 0 your email
+53 0 Facebook
+
+6 Do not _____ people or talk behind their backs.
+61 1 exclude 
+62 0 help
+63 0 encourage
+
+7 Do not _____ private or embarrassing images or comments.
+71 1 post 
+72 0 take
+73 0 share
+
+8 Be careful with _____ ! There are times when choice words emphasized by capital letters.
+81 1 CAPS
+82 0 language
+83 0 colors

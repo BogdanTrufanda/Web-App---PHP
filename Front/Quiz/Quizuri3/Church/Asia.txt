@@ -1,0 +1,39 @@
+1 What are the required articles of clothing for women when entering a mosque ?
+11 1 ankle-length skirts or pants
+12 0 pants or short skirts
+13 0 there are is no required clothing
+
+2 Which actions should you be particularly sensitive about during Ramadan ?
+21 1 smoking, eating or drinking
+22 0 smoking, drinking or spitting
+23 0 dancing, drinking and eating
+
+3 Which articles of clothing should you remove before entering a temple or a mosque ?
+31 1 shoes and hat
+32 0 shoes and glasses
+33 0 glasses and hat
+
+4 What should you never do to a Buddha statue ?
+41 1 touch, sit or climb on it
+42 0 touch, sit or look at it
+43 0 sit, look at it or point at it
+
+5 Can you always find mosques that will lend you modest clothing during visits ?
+51 1 only at the bigger mosques
+52 0 no
+53 0 yes
+
+6 How should you behave if you visit a mosque during prayer ?
+61 1 sit quietly at the back wall
+62 0 take photographs
+63 0 wander in the mosque
+
+7 Are short-sleeved shirts acceptable to wear when visiting a mosque ?
+71 1 if the sleeve is not shorter than average
+72 0 yes
+73 0 no
+
+8 What is considered extremely rude at a temple ?
+81 1 pointing at things or people
+82 0 looking at statues
+83 0 stepping on insects

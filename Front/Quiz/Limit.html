@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GoMaR</title>
+        <link rel="stylesheet" type="text/css" href="limitStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img class="nav-img" alt="poza" src="../Resources/logo.png">
+        </div>
+         <br>
+        <br>
+        <br>
+       
+        
+        <section>
+            <h1>You reached your limit! You have to wait before doing another Lvl 1 Quiz!</h1>
+            <form method="post" action="../Recommendation/Recommendation.php">
+                
+                
+                <h1 id="demo"></h1>
+                
+                <button class="btn" name="buton">Go Back!</button>
+            </form>
+        </section>
+
+        
+        
+        <script >    
+            var countDownDate = "<?php echo $_SESSION['timp']; ?>";
+            var x = setInterval(function() {
+
+                var now = +new Date();
+                var distance = countDownDate - now;
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+
+                if (distance < 0)
+                {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = " ";
+                    window.location.replace("test.php");
+                }
+            }, 1000);
+        </script>
+           
+
+    </body>
+
+</html>
