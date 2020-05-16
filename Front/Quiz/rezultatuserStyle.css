@@ -1,0 +1,133 @@
+/*-------------------------------------*/
+/*General*/
+/*-------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Francois One';
+    background-color: #333;
+    background: url("../Resources/back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*-------------------------------------*/
+/*Navbar*/
+/*-------------------------------------*/
+
+.navbar {
+    background-color: #333;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.navbar img {
+    width: 70px;
+    height: 45px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #ffa41b;
+
+}
+
+.navbar a.active {
+    background-color: #ffa41b;
+    color: white;
+}
+
+.navbar-right {
+    float: right;
+}
+
+/*-------------------------------------*/
+/*Body*/
+/*-------------------------------------*/
+
+
+.btn {
+    margin: 0 auto;
+    display: block;
+    height: 60px;
+    width: 250px;
+    background-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image: linear-gradient(to left, #ffa41b 0%, #df7861 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    font-size: 28px;
+    font-family: 'Courgette';
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.5em;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    border-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    background-image: linear-gradient(to left, #feb377 0%, #feb377 100%);
+    border-image-slice: 1;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+/*---------MEDIA--------------*/
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+
+    .navbar {
+        padding: 25px 20px;
+
+    }
+
+    .navbar img {
+        width: 90px;
+        height: 60px;
+    }
+
+    .navbar a {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+</head>
+
+<body prefix="schema: http://schema.org">
+    <header>
+        <h1>Gomar</h1>
+    </header>
+
+    <div role="contentinfo">
+        <dl>
+            <dt>Authors</dt>
+            <dd>
+                Mendela Abel & Rauleac Robert & Trufanda Bogdan
+            </dd>
+            <dt>Bugs &amp; Feedback</dt>
+            <dd>
+                <a href="https://github.com/TrufandaBogdan1978/Proiect-TW2020
+        ">https://github.com/TrufandaBogdan1978/Proiect-TW2020</a>
+            </dd>
+            <dt>Discussion Group</dt>
+            <dd>
+                <a href="https://github.com/TrufandaBogdan1978/Proiect-TW2020
+        ">https://github.com/TrufandaBogdan1978/Proiect-TW2020</a>
+            </dd>
+
+        </dl>
+    </div>
+
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2>Introducere</h2>
+        <p>
+            Proiectul echipei noastre se numeste GoMaR si are ca scop sa ofere suport pentru invatarea si recomandarea normelor si reguliilor de comportament in societate si pe Internet.
+        </p>
+    </section>
+
+    <section id="introduction" role="doc-introduction">
+        <!-- review? -->
+        <h2>Cromatica siteului</h2>
+        <p>
+            In alegerea culorilor am decis sa folosim diferite nuante de orange si negru pentru a evidentia mai bine diferite elemente din pagina dar si cu scopul de a face sesiunea utilizatorului cat mai placuta.
+        </p>
+
+    </section>
+
+    <section id="structure">
+
+        <!-- review? -->
+        <h2>Structura</h2>
+        <p>
+            ...
+        </p>
+        <section id="Root">
+            <!-- review? -->
+            <h3>Pagina de pornire</h3>
+            <p>
+                Pagina de pornire pentru crearea unui cont de utilizator este pagaina Register.html, dupa ce utilizatorul isi va crea contul prin completarea fieldurilor si va apasa butonul de Register va merge direct pe pagina Login.html, daca utilizatorul deja are un cont pe aceasta aplicatie exista un link sub butonul de Register direct catre pagina Login.html.
+            </p>
+        </section>
+
+        <section id="article">
+            <!-- review? -->
+            <h3>Pagina de login</h3>
+            <p>
+                Pagina Login.html este cea prin intermediul careia utilizatorul se va loga in aplicatie prin introducerea datelor necesare, iar la apasarea butonului Login acesa va ajunge pe pagina Recommendation.html. De asemenea, daca acesta nu are cont gasim sub butonul de Login un link direct catre pagina Register.html.
+            </p>
+        </section>
+
+        <section id="hunk">
+            <!-- review? -->
+            <h3>Pagina de Recomandari + Quizuri</h3>
+            <p>
+                Pagina Recommendation.html reprezinta pagina de home pentru aplicatia noastra. Putem regasi pe aceasta un navbar pe care sa afla logoul aplicatiei cat si 3 butoane : User ce ne va duce pe pagina User.html unde putem regasi mai multe date despre utilizator (nume, varsta, oras etc...), Rankings ce ne va duce pe pagina Rankings.html unde putem regasi mai multe date despre punctajele obtinute de utilizatori in diferite domenii si butonul de Logout ce ne va incheia sesiune si ne va directiona catre pagina Login.html. De asemenea, putem regasi 6 formuri fiecare continand cate un domeniu de interes general pentru utilizatorii nostrii. Formul contine un selector de continente ce ne va ajuta in generarea normelor si reguliilor de comportament specifice utilizatorului. Atunci cand utilizatorul va apasa pe butonul de Read va fi dus pe pagina NumeDomeniuAles.html ( unde NumeDomeniuAles = {Bus, Table, Internet, Church, Job, Traffic} ). Toate cele 6 formuri sunt incadrate intr-un flex container deoarece ... Bogdan te rog sa ma ajuti tu aici ... . Pe pagina NumeDomeniuAles.html ( unde NumeDomeniuAles = {Bus, Table, Internet, Church, Job, Traffic} ) acelasi navabar ca si in pagina Recommendation.html cat si normele si reguliile de comportament in concordanta cu continentul ales la inceput in form si totodata regasim in partea de jos 4 butoane : Go Back ce ne va duce inapoi pe pagina Recommendation.html si butoanele Quiz 1, Quiz 2, Quiz 3 ne vor duce pe pagina NumeDomeniuAlesQuizX.html ( unde NumeDomeniuAles = {Bus, Table, Internet, Church, Job, Traffic} ) si X = (1,2,3) fiecare test fiind diferit in dificultate in functie de cum creste X. Pagina contine un titlu, putin mai mare in dimensiune fata de intrebari pentru a putea face distinctia. Pagina are doua formate in functie de dimensiunea display-ului, unul pentru mobile/tableta si unul pentru desktop. In view-ul pentru mobile/tableta, chenarele ocupa toata latimea paginii, in timp ce pentru desktop avem spatiu lateral fata de margine si chenar. Am aplicat un background care este translucid pentru a ajuta in citirea intrebarii. Intrebarile sunt separate cu un border subtire si subtil. Avem in josul paginii trei butoane: submit, clear si un buton „bus” care ne duce inapoi la pagina ce contine teoria. In partea cea mai de jos a paginii regasim informatii despre rezultatele utilizatorului cu privire la acest test.
+            </p>
+        </section>
+
+        <section id="inline">
+            <!-- review? -->
+            <h3>Pagina pentru user</h3>
+            <p>
+                Pe pagina User.html gasim urmatoarele date despre utilizator: nume, zona geografica, statut social si punctajele totale aferente fiecarei categorii. De seamenea navbarul contine urmatoarele: un buton de logout, un buton de trimitere catre Recommendation si un buton cu trimitere catre User. In pagina User avem un tag „main” care contine partea principala a paginii. Acest tag „main” are proprietatea display: flex, lucru care ne-a permis sa impartim main-ul in doua sectiuni, una cu poza de profil si cealalta cu informatiile utilizatorului.
+            </p>
+        </section>
+
+        <section id="rankings">
+            <!-- review? -->
+            <h3>Pagina de rankings</h3>
+            <p>
+                Pe pagina Rankings.html gasim urmatoarele date despre utilizator ...Bogdan te rog sa completezi tu... . De seamenea navbarul contine urmatoarele ... Bogdan te rog sa completezi tu... . +daca ai folosit ceva special
+            </p>
+        </section>
+
+    </section>
+
+    <section id="semantics">
+        <!-- review? -->
+        <h2>Structura arborescenta</h2>
+        <ul>
+            <li>www.gomar.ro/register</li>
+            <li>www.gomar.ro/login</li>
+            <li>www.gomar.ro/recommendation</li>
+            <li>www.gomar.ro/rankings </li>
+            <li>www.gomar.ro/user</li>
+            <li>www.gomar.ro/bus</li>
+            <li>www.gomar.ro/busquiz</li>
+
+        </ul>
+    </section>
+
+    <section id="Gestionarea">
+        <!-- review? -->
+        <h2>Gestionarea Codului Sursa</h2>
+        <ul>
+            <li>Am folosit ca si platforma de gestionarea a codului sursa Github.</li>
+            <li>Codul sursa poate fi accesat la urmatorul link: <a href="https://github.com/TrufandaBogdan1978/Proiect-TW2020
+        ">https://github.com/TrufandaBogdan1978/Proiect-TW2020</a></li>
+        </ul>
+    </section>
+
+
+</body></html>

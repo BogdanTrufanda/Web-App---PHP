@@ -1,0 +1,39 @@
+1 In a mosque, both men and women should cover as much _____ as possible.
+11 1 skin
+12 0 hair
+13 0 body
+
+2 Men should wear plain shirts without _____ when visiting mosques.
+21 1 messages or slogans
+22 0 distracting models
+23 0 girly colors
+
+3 It is best to visit mosques before _____ during Ramadan.
+31 1 sundown
+32 0 sunrise
+33 0 noon
+
+4 When sitting, never _____ your feet at a person or at the image of Buddha.
+41 1 point
+42 0 sprawl
+43 0 rest
+
+5 You should only use your _____ when receiving something from a monk.
+51 1 right hand
+52 0 left hand
+53 0 feet
+
+6 Women should generally pass on their donations to a man, who then hands it over to the _____.
+61 1 monk
+62 0 priest
+63 0 donation box
+
+7 In general, tourists should avoid visiting a mosque during _____.
+71 1 prayer
+72 0 party
+73 0 silence
+
+8 Get permission before taking _____ and never do so during worship.
+81 1 photographs
+82 0 goods
+83 0 money

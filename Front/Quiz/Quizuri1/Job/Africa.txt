@@ -1,0 +1,39 @@
+1 Show respect for _____.
+11 1 elders
+12 0 youngsters
+13 0 middle-aged persons
+
+2 Set your price _____ to what you expect to get for your services.
+21 1 close
+22 0 far
+23 0 exactly
+
+3 Add a _____ to your contract.
+31 1 deadline
+32 0 smiley face
+33 0 footer
+
+4 You should view the deadline on your contract as _____.
+41 1 flexible
+42 0 optional
+43 0 unimportant
+
+5 Negotiations move _____ in South Africa.
+51 1 slowly
+52 0 fast
+53 0 at a steady pace
+
+6 If you receive an invitation to a South African home, you should bring a _____ for the hostess.
+61 1 gift
+62 0 pet
+63 0 book
+
+7 When negotiating do not _____ on bartering for price.
+71 1 hinge strongly
+72 0 rely
+73 0 be indifferent
+
+8 Negotiations should be approached with a _____ in mind.
+81 1 mutually beneficient agreement
+82 0 personal benefit
+83 0 company benefit

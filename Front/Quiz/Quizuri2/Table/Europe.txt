@@ -1,0 +1,39 @@
+1 What should you remember to use at the table? 
+11 1 a napkin
+12 0 your phone
+13 0 your glasses
+
+2 What to do after you are done chewing?
+21 1 sip or swallow a drink
+22 0 take another bite
+23 0 stop eating
+
+3 How many pieces of food should you cut at a time?
+31 1 one piece 
+32 0 two piece 
+33 0 ten piece 
+
+4 What to keep off the table?
+41 1 your phone
+42 0 your glasses
+43 0 your hat
+
+5 How to not use your ustensils?
+51 1 shovel or stab your food
+52 0 use only one hand
+53 0 use bouth hands
+
+6 What should you do if you can't reach something across the table?
+61 1 ask for it
+62 0 fight for it
+63 0 scream for it
+
+7 How should you chew your food?
+71 1 with your mouth closed 
+72 0 with your mouth opened
+73 0 with your mouth dosen't matter how
+
+8 What not to check at the table?
+81 1 calls 
+82 0 other people
+83 0 the food

@@ -1,0 +1,39 @@
+1 What should you be punctual for ?
+11 1 leaving the day, lunch hour and breaks
+12 0 deadlines, ariving at the job and breaks
+13 0 breaks, deadlines and flirting
+
+2 Which of the following should you do at work ?
+21 1 be respectful and watch your language
+22 0 gossip and be late
+23 0 be earlier and make personal calls
+
+3 To focus on the job, you have to avoid spending time on _____.
+31 1 personal calls or surfing the web
+32 0 surfing the web or chatting
+33 0 surfing the web or filing
+
+4 What type of people should you show great respect to ?
+41 1 elders
+42 0 youngsters
+43 0 middle aged persons
+
+5 What items work well as a hostess gift ?
+51 1 a bottle of wine, flowers and chocolates
+52 0 flowers, chocolates and a pet
+53 0 chocolates, a bottle of wine and an article of clothing
+
+6 What should you pay close attention to when watching your language ?
+61 1 tone of voice and phrasing
+62 0 tone of voice and swearing
+63 0 phrasing and swearing
+
+7 Should you adapt to how negotiations move in Africa ?
+71 1 yes
+72 0 no
+73 0 sometimes
+
+8 Is it okay to anticipate tasks before they are given to you ?
+81 1 yes
+82 0 no
+83 0 sometimes

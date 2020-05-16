@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><?php echo $name." - "."GoMaR"; ?></title>
+        <link rel="icon" href="../Resources/logo.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="UserStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1b1f31e76e.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img alt="poza" class="logo" src="../Resources/logo.png">
+            <div class="navbar-right">
+                <a href="../Recommendation/Recommendation.php">Recommendation</a>
+                <a href="../Rankings/Rankings.php">Rankings</a>
+                <a href="../../index.php">Logout</a>
+            </div>
+        </div>
+
+        <main>
+            <div class="user-pic">
+                <img src="../Resources/user.png" class="pic">
+                <span class="pic-name"><?php echo $user ?></span>
+            </div>
+            <div class="user-info">
+                <div class="user-name">
+                    <span class="name"><?php echo $user ?></span>
+                </div>
+                <div class="user-info-specific">
+                    <span class="info-category">Geographic&nbsp;Region:</span>
+                    <span class="info"> <?php echo $region; ?> </span>
+                </div>
+                <div class="user-info-specific">
+                    <span class="info-category">Social&nbsp;Status:</span>
+                    <span class="info"><?php echo $status; ?></span>
+                </div>
+                <div class="user-score">
+                    <div class="score-category">
+                        <span class="category">Traffic</span>
+                        <br>
+                        <span class="score"> <?php echo $traffic_score ?> </span>
+                    </div>
+                    <div class="score-category">
+                        <span class="category">Table</span>
+                        <br>
+                        <span class="score"> <?php echo $table_score ?> </span>
+                    </div>
+                    <div class="score-category">
+                        <span class="category">Internet</span>
+                        <br>
+                        <span class="score"> <?php echo $internet_score ?> </span>
+                    </div>
+                    <div class="score-category">
+                        <span class="category">Church</span>
+                        <br>
+                        <span class="score"> <?php echo $church_score ?> </span>
+                    </div>
+                    <div class="score-category">
+                        <span class="category">Job</span>
+                        <br>
+                        <span class="score"> <?php echo $job_score ?> </span>
+                    </div>
+                    <div class="score-category">
+                        <span class="category">Bus</span>
+                        <br>
+                        <span class="score"> <?php echo $bus_score ?> </span>
+                    </div>
+                </div>
+            </div>
+            <form class="user-btn-container">
+                <input class="user-btn" type="button" onclick="window.location.href = '../Preferences/Preferences.php';" value="Preferences">
+            </form>
+        </main>
+    </body>
+
+</html>
