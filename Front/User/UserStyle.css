@@ -202,7 +202,7 @@ input.user-btn:hover {
         font-family: 'Courgette';
         color: white;
         text-shadow: 1px 1px black;
-        margin-left: 1rem;
+        margin-left: 5px;
         font-size: 5.3vw;
     }
     div.user-score{
@@ -337,7 +337,7 @@ input.user-btn:hover {
         font-size: 2vw;
         color: gray;
         text-align: start;
-        text-shadow: 1px 1px back;
+        
     }
     span.info{
         margin-left: 0.5rem;
@@ -380,7 +380,32 @@ input.user-btn:hover {
 
 }
 
-
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    
+    main {
+        display: block;
+    }
+    
+   div.user-info {
+    display: flex;
+    margin-left: 3%;
+    max-width: 40%;
+    margin-top: 50px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* padding-bottom: 15%; */
+    margin: auto;
+    padding-top: 60px;
+}
+    div.user-pic {
+    margin-top: 5%;
+    max-width: 42%;
+    margin-left: 0%;
+    padding-top: 60px;
+    margin: auto;
+}
+    
+}
 
 /*FULL HD land*/
 @media only screen and (min-width: 1700px){
@@ -447,7 +472,7 @@ input.user-btn:hover {
         font-size: 2vw;
         color: gray;
         text-align: start;
-        text-shadow: 1px 1px back;
+        
     }
     span.info{
         margin-left: 0.5rem;

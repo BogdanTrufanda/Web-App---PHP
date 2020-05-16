@@ -161,15 +161,14 @@ select option {
 
 
     .navbar a {
-        float: left;
-        color: white;
-        text-align: center;
-        padding: 12px;
-        text-decoration: none;
-        font-size: 13px;
-        line-height: 25px;
-    }
-
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px 8px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 25px;
+}
     h1 {
         font-size: 40px;
 

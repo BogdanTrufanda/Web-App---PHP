@@ -18,6 +18,7 @@ body {
     font-size: 40px;
     color: #fff;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 
@@ -151,10 +152,14 @@ ol {
     }
 
     ol {
-        padding-right: 30px;
+    padding-right: 10px;
+    text-align: center;
+    list-style-position: inside;
+}
+    .pad {
+    padding-bottom: 40px;
         text-align: center;
-        list-style-position: inside;
-    }
+}
 
 }
 
@@ -223,6 +228,9 @@ ol {
         font-size: 36px;
     }
 
+    .pad {
+    padding-bottom: 40px;
+}
    
 
     .navbar a {
