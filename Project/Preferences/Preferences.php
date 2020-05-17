@@ -28,7 +28,6 @@ if (isset($_SESSION["username"]))
             echo "Failed to connect to MySQL: " . $con -> connect_error;
             exit();
         }
-        echo 123333333333333333333;
         if ($continent != '')
         {
             $_SESSION['regiune'] = $continent; 
@@ -46,48 +45,46 @@ if (isset($_SESSION["username"]))
             $stmt->execute();
             $result = $stmt->get_result();
         }
-        echo 2222222222222222222222222222; 
 
-                if ($pass != '')
-                {    
-                    if ($passs != '')
+        if ($pass != '')
+        {    
+            if ($passs != '')
+            {
+                if (strcmp($pass,$passs) == 0)
+                {
+                    $stmt = $con->prepare('SELECT password FROM users WHERE username = ?');
+                    $stmt->bind_param('s', $name); 
+
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                    while ($col = $result->fetch_assoc())
                     {
-                        if (strcmp($pass,$passs) == 0)
-                        {
-                            $stmt = $con->prepare('SELECT password FROM users WHERE username = ?');
-                            $stmt->bind_param('s', $name); 
-        
-                            $stmt->execute();
-                            $result = $stmt->get_result();
-                            while ($col = $result->fetch_assoc())
-                            {
-                                $parolapref = $row["password"];
-                                echo $parolapref;
-        
-                            }
-                            if (strcmp($parolapref,$pass) == 0)
-                            {
-                                $_SESSION['preferror'] = 1;
-                                exit(header('Location: '.$_SERVER['PHP_SELF']));
-                            }
-                            else
-                            {
-        
-                                $stmt = $con->prepare("update users SET password = '$pass' where username = ?");
-                                $stmt->bind_param('s', $name); 
-                                $stmt->execute();
-                                $result = $stmt->get_result();
-                                mysqli_close($con);
-                            }
-                        }
-                        else
-                        {
-                            $_SESSION['preferror'] = 1;
-                            exit(header('Location: '.$_SERVER['PHP_SELF']));
-                        }
+                        $parolapref = $row["password"];
+
+                    }
+                    if (strcmp($parolapref,$pass) == 0)
+                    {
+                        $_SESSION['preferror'] = 1;
+                        exit(header('Location: '.$_SERVER['PHP_SELF']));
+                    }
+                    else
+                    {
+
+                        $stmt = $con->prepare("update users SET password = '$pass' where username = ?");
+                        $stmt->bind_param('s', $name); 
+                        $stmt->execute();
+                        $result = $stmt->get_result();
+                        mysqli_close($con);
                     }
                 }
-                        exit(header("Location: ../User/User.php"));
+                else
+                {
+                    $_SESSION['preferror'] = 1;
+                    exit(header('Location: '.$_SERVER['PHP_SELF']));
+                }
+            }
+        }
+        exit(header("Location: ../User/User.php"));
     }
 }
 else
