@@ -147,7 +147,7 @@ input.btn:hover {
     }
 
 
-    .btn {
+    input.btn {
         padding: 10px 15px;
         display: block;
         width: 50%;
