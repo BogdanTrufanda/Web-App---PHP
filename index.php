@@ -8,7 +8,7 @@ if (isset($_SESSION["username"]))
     session_destroy();
 }
 
-require 'Front\Login\login.html';
+require 'Project\Login\login.html';
 
 if (isset($_POST['buton']))
 {
@@ -64,7 +64,7 @@ if (isset($_POST['buton']))
         else
         {
             $_SESSION["username"] = $name;
-            exit(header("Location: Front/Recommendation/Recommendation.php"));
+            exit(header("Location: Project/Recommendation/Recommendation.php"));
         }
 
     }   

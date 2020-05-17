@@ -8,7 +8,7 @@ $names = array("Table", "Bus", "Church", "Traffic", "Internet", "Job" );
 
 header("Content-Type: text/xml;charset=iso-8859-1");
 
-$base_url = "http://localhost/Front/Rankings/";
+$base_url = "http://localhost/Project/Rankings/";
 
 echo "<?xml version='1.0' encoding='UTF-8' ?>" . PHP_EOL;
 echo "<rss version='2.0'>".PHP_EOL;
