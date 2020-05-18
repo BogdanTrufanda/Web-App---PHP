@@ -1,5 +1,6 @@
 <?php
-
+ini_set('session.cache_limiter','public');
+session_cache_limiter(false);
 session_start();
 if (isset($_SESSION["username"]))
 {
@@ -14,10 +15,10 @@ if (isset($_SESSION["username"]))
     $_SESSION["topic"] = "Traffic";
     $_SESSION["quiz"] = "traffic_score";
 
-    if(isset($_POST["quizdiff"]))
+    if(isset($_GET["quizdiff"]))
     {
 
-        $difficulty = $_POST["quizdiff"];
+        $difficulty = $_GET["quizdiff"];
         $_SESSION["quizdiff"] = $difficulty;
         exit(header("Location: ../Quiz/test.php"));
     }

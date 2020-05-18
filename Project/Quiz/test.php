@@ -74,12 +74,12 @@ if (isset($_SESSION["username"]))
             }
             else
             {
-                if (isset($_POST["buton"]))
+                if (isset($_GET["buton"]))
                 {
-                    if (isset($_POST['q1']) && isset($_POST['q2']) && isset($_POST['q3']) && isset($_POST['q4']) && isset($_POST['q5']))
+                    if (isset($_GET['q1']) && isset($_GET['q2']) && isset($_GET['q3']) && isset($_GET['q4']) && isset($_GET['q5']))
                     {
                         $stringuser = "";
-                        $stringuser = $stringuser . $_POST['q1'] . $_POST['q2'] . $_POST['q3'] . $_POST['q4'] . $_POST['q5'];
+                        $stringuser = $stringuser . $_GET['q1'] . $_GET['q2'] . $_GET['q3'] . $_GET['q4'] . $_GET['q5'];
                         $_SESSION['userinput'] = $stringuser;
                         exit(header("Location: rezultatuser.php"));    
                     }

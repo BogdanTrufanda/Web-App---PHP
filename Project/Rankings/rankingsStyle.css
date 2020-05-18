@@ -72,8 +72,8 @@ body {
     color: #fff;
     font-weight: 800;
     text-align: center;
-/*    margin-bottom: 2.5em;*/
     text-decoration: none;
+    margin-bottom: 35px;
 }
 
 
@@ -245,6 +245,7 @@ ol {
         height: 50px;
         width: 120px;
         font-size: 36px;
+        margin-bottom: 35px;
     }
 
     .pad {

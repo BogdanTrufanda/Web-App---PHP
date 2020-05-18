@@ -14,10 +14,10 @@ if (isset($_SESSION["username"]))
     $_SESSION["topic"] = "Job";
     $_SESSION["quiz"] = "job_score";
 
-    if(isset($_POST["quizdiff"]))
+    if(isset($_GET["quizdiff"]))
     {
 
-        $difficulty = $_POST["quizdiff"];
+        $difficulty = $_GET["quizdiff"];
         $_SESSION["quizdiff"] = $difficulty;
         exit(header("Location: ../Quiz/test.php"));
     }

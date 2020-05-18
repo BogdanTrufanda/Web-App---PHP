@@ -14,12 +14,12 @@ if (isset($_SESSION["username"]))
     $_SESSION["topic"] = "Table";
     $_SESSION["quiz"] = "table_score";
 
-    if(isset($_POST["quizdiff"]))
+    if(isset($_GET["quizdiff"]))
     {
 
-        $difficulty = $_POST["quizdiff"];
+        $difficulty = $_GET["quizdiff"];
         $_SESSION["quizdiff"] = $difficulty;
-        header("Location: ../Quiz/test.php");
+        exit(header("Location: ../Quiz/test.php"));
     }
 
     require "Manners.html";
