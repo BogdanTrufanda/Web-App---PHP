@@ -100,6 +100,15 @@ body {
     flex: 1 0 450px;
 }
 
+.bord {
+    border: 2px solid orange;
+    width: 50%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 li {
     font-size: 17px;
     color: #ccc;
@@ -111,6 +120,8 @@ h4 {
     font-size: 30px;
     text-align: center;
     color: #ffa41b;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 ol {
@@ -147,6 +158,10 @@ ol {
     h4 {
         text-align: center;
         
+    }
+    
+    .button {
+        margin-bottom: 20px;
     }
 
     .box {
