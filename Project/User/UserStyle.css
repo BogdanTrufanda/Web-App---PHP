@@ -48,8 +48,6 @@ span{
 .navbar {
     background-color: #333;
     padding: 20px 10px;
-   position: sticky;
-    top: 0;
 }
 
 .navbar a {
@@ -252,16 +250,16 @@ input.user-btn:hover {
     }
 
     .navbar a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    padding-right: 5px;
-    padding-left: 5px;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 25px;
-}
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        padding-right: 5px;
+        padding-left: 5px;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 25px;
+    }
 
     form.user-btn-container {
         width: 100%;
@@ -276,7 +274,7 @@ input.user-btn:hover {
 
 /*Tablets/Ipads*/
 
-@media only screen and (min-width: 766px) and (max-width: 1024px) {
+@media only screen and (min-width: 766px) {
     span.pic-name{
         display: none;
     }
@@ -284,33 +282,33 @@ input.user-btn:hover {
         display: block;
     }
     main{
-        display: block;
-        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
     }
-    div.user-pic {
-    max-width: 50%;
-    margin: 45px auto;
-    margin-top: 65px;
-}
+    div.user-pic{
+        margin-top: 5%;
+        max-width: 50%;
+        margin-left: 15%;
+    }
     img.pic{
         display: block;
-        max-width: 380px;
+        max-width: 300px;
         height: auto;
         border-bottom: 500px white;
         border: 1px solid white;
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    div.user-info {
-    display: flex;
-    margin-left: 3%;
-    max-width: 40%;
-    margin-top: 50px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: auto;
-    /* padding-bottom: 15%; */
-    /* text-align: center; */
-}
+    div.user-info{
+        display: flex;
+        margin-left: 3%;
+        max-width: 40%;
+        margin-top: 50px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        /*padding-bottom: 15%;*/
+    }
     div.user-name{
         font-family: 'Courgette';
         text-shadow: 1px 1px black;
@@ -383,82 +381,6 @@ input.user-btn:hover {
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1100px) {
-    
-    img.pic {
-    display: block;
-    max-width: 510px;
-    height: auto;
-    border-bottom: 500px white;
-    border: 1px solid white;
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    span.name {
-    font-size: 50px;
-    text-shadow: 1px 1px black;
-    text-decoration: underline white;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-    
-    span.info-category {
-    display: block;
-    min-width: 45%;
-    font-size: 35px;
-    color: gray;
-    text-align: start;
-}
-    
-    span.info {
-    margin-left: 0.5rem;
-    max-width: 50%;
-    font-family: 'Courgette';
-    color: white;
-    text-shadow: 1px 1px black;
-    margin-left: 0.5rem;
-    font-size: 35px;
-}
-    span.category {
-    display: block;
-    width: 50%;
-    font-size: 35px;
-    font-family: 'Francois One';
-    color: gray;
-    text-align: start;
-    text-shadow: 1px 1px black;
-}
-    
-    span.score {
-    margin-left: 0.5rem;
-    width: auto;
-    font-family: 'Courgette';
-    color: white;
-    text-shadow: 1px 1px black;
-    margin-left: 1.5rem;
-    font-size: 35px;
-}
-    
-    div.user-pic {
-    margin-top: 10px;
-    max-width: 50%;
-    margin: 45px auto;
-    margin-top: 95px;
-}
-    
-    div.user-info {
-    display: flex;
-    margin-left: 3%;
-    max-width: 50%;
-    margin-top: 50px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: auto;
-    /* padding-bottom: 15%; */
-    /* text-align: center; */
-}
-}
-
 
 
 /*FULL HD land*/
@@ -471,7 +393,7 @@ input.user-btn:hover {
     }
     main{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: wrap; 
     }
     div.user-pic{

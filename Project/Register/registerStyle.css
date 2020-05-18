@@ -7,9 +7,6 @@ body {
     font-family: 'Francois One';
     background-color: green;
     background: url("../Resources/back.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -22,6 +19,8 @@ nav {
     margin: 0;
     color: #fff;
     padding: 20px 10px;
+   position: sticky;
+    top: 0;
 }
 
 .logo-size {
