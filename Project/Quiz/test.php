@@ -18,7 +18,7 @@ if (isset($_SESSION["username"]))
     }
     if(isset($_COOKIE[$tmp]))
     {
-        require 'limit.php';
+        require 'Limit.html';
     }
     else
     {

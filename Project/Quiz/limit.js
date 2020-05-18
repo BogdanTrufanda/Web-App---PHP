@@ -1,27 +1,25 @@
-            var javaScriptVar = "<?php echo $_SESSION['timp']; ?>";
-//            var today = new Date();
-//            var date = today.getFullYear() + '-' + (today.getMonth()+ 1) + '-' + today.getDate();
-//            var time = today.getHours() + ":" + (today.getMinutes() + ) + ":" + today.getSeconds();
-//            var date_time = date + ' ' + time;
-//
-//            var countDownDate = new Date(date_time).getTime();
-            var x = setInterval(function() {
+function get_cookie_value(name) {
+  var match = document.cookie.match(new RegExp(name + '=([^;]+)'));
+  if (match)
+      return match;
+}
 
-                var now = new Date().getTime();
-                window.alert(now);
-                window.alert(javaScriptVar);
-                var distance = javaScriptVar - now;
+var countDownDate = get_cookie_value("time_cookie")[1]; 
 
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+countDownDate = parseInt(countDownDate);
+var x = setInterval(function() {
 
-                document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+    var now = +new Date();
+    var distance = countDownDate - now;
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                  if (distance < 0)
-                  {
-                        clearInterval(x);
-                        document.getElementById("demo").innerHTML = " ";
-                        window.location.replace("test.php");
-                }
-            }, 1000);
+    document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
 
+    if (distance < 0)
+    {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = " ";
+        window.location.replace("test.php");
+    }
+}, 1000);

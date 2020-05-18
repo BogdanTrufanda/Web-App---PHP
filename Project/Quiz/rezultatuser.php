@@ -67,9 +67,9 @@ if (isset($_SESSION["username"]))
         if(strcmp($difficulty, 'Quiz Lvl 1') == 0){
             if(!isset($_COOKIE[$cookiename])) 
             {
-                $_SESSION['timp'] = round(microtime(true) * 1000) + 60000;
                 $cookiename = $cookiename . "1";
                 setcookie($cookiename, 1, time() + (60), "/"); 
+                setcookie("time_cookie", round(microtime(true) * 1000) + 60000, time() + (60), "/"); 
             }
         }
         $_SESSION['puncte'] = $punctaj;

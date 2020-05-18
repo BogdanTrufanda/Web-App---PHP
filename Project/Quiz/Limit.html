@@ -31,30 +31,7 @@
                 <button class="btn" name="buton">Go Back!</button>
             </form>
         </center>
-
-
-
-        <script >    
-            var countDownDate = "<?php echo $_SESSION['timp']; ?>";
-            var x = setInterval(function() {
-
-                var now = +new Date();
-                var distance = countDownDate - now;
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
-
-                if (distance < 0)
-                {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = " ";
-                    window.location.replace("test.php");
-                }
-            }, 1000);
-        </script>
-
-
+        <script src="limit.js"></script>
     </body>
 
 </html>
