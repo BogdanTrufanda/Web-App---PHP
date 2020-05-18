@@ -29,6 +29,8 @@ body {
 .navbar {
     background-color: #333;
     padding: 20px 10px;
+   position: sticky;
+    top: 0;
 }
 
 .navbar a {
@@ -94,6 +96,7 @@ body {
 }
 
 .box {
+    border-color: rebeccapurple;
     flex: 1 0 450px;
 }
 
