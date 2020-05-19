@@ -5,7 +5,6 @@ session_start();
 if (isset($_SESSION["username"]))
 {
     $_SESSION = array();
-    session_destroy();
 }
 
 require 'Project\Login\login.html';

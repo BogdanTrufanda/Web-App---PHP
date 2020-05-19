@@ -26,9 +26,6 @@ body {
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment: scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -60,8 +57,9 @@ section {
 .navbar {
     background-color: #333;
     padding: 20px 10px;
-       position: sticky;
+    position: sticky;
     top: 0;
+    overflow: hidden;
 }
 
 .navbar a {
@@ -129,6 +127,7 @@ input[type=radio] {
     border-width: 2px;
     background: #FFF;
     transition: 0.2s all linear;
+    overflow: hidden;
 }
 
 input[type=radio]:hover {
@@ -290,7 +289,7 @@ input.form-print {
     }
 
     div.form-delimiter {
-/*        1 display: block;*/
+        /*        1 display: block;*/
         width: 100%;
         height: 0.1rem;
         background: #FFF;
@@ -298,7 +297,7 @@ input.form-print {
     }
 
     div.form-section {
-/*        background: rgba(179, 179, 204, 0.15);*/
+        /*        background: rgba(179, 179, 204, 0.15);*/
         margin: 0;
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -428,7 +427,6 @@ input.form-print {
         bottom: -0.1rem;
         left: 1rem;
         font-size: 2.2rem;
-
     }
 
     input[type=radio] {

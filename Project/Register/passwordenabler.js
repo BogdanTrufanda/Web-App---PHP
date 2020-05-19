@@ -1,8 +1,13 @@
-function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
+function showpass()
+{
+var pass = document.getElementById("passwordid");
+
+if (pass.type === "password")
+{
+    pass.type = "text";
+} 
+else 
+{
+    pass.type = "password";
+}
 }
